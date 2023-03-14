@@ -1,4 +1,6 @@
-
+Fixes:
+    Mew seems to return 150 instead of none.
+    Fix Number appendix
 Upcoming:
     Icon that changes color when in a compatible page.
 

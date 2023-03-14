@@ -1,55 +1,44 @@
-//console.log('you visited serebii.net or bulbapedia.bulbagarden.net');
+//This Code Triggers when visiting any url with https://www.serebii.net/* or https://bulbapedia.bulbagarden.net/wiki/*
 
-let mon = 'NULL';
-let place = 'NULL';
+let mon;
+let gen = 4456496; //Gen 0 = various generations available. Default value means not defined
+let place;
 let url = location.href;
 
 if (!url) {
-  mon = 'NULL';
-  place = 'NULL';
+  console.log('⚠️ Unable to get a url from the current session.');
 } else if (url.includes('serebii.net')) {
-  place = 'Serebii';
-  mon = fetchSerebii(url);
-} else if (url.includes('bulbapedia.bulbagarden')) {
-  place = 'Bulbapedia';
-  mon = fetchBulba(url);
+  fetchSerebii(url);
 }
 
 function fetchSerebii(url) {
   var npkmn = 0;
-  var gen = 0;
-  var pkmn = 'NULL';
 
   if (url.includes('serebii.net/pokedex/')) {
+    gen = 1;
+    //Default pages don't return a valid pokémon
     if (url == 'https://www.serebii.net/pokedex/') return;
 
-    gen = 1;
-    console.log('Visiting a page related to Gen 1.');
-    npkmn = url.replace('https://www.serebii.net/pokedex/', '');
-    npkmn = npkmn.replace('.shtml', '');
+    try {
+      npkmn = url.replace('https://www.serebii.net/pokedex/', '');
+      npkmn = npkmn.replace('.shtml', '');
 
-    fetch('https://luisccosta12.social/assets/temp/gen1.json')
-      .then((response) => response.json())
-      .then((data) => {
-        var temp = npkmn.replace('0', '');
-        console.log(
-          `Just fetched a pkmn w/ id ${
-            data[temp - 1].id
-          } is video is https://youtu.be/${
-            data[temp - 1].forms[0].videos[0].link
-          }.`
-        );
-      });
+      const localurl = chrome.runtime.getURL('./assets/db/g1/main.json');
+
+      fetch(localurl)
+        .then((response) => response.json())
+        .then((data) => {
+          var temp = npkmn.replace('0', '');
+          console.log(
+            `ℹ️ Fetched a pkmn id ${
+              data[temp - 1].id
+            } -> video https://youtu.be/${data[temp - 1].link}.`
+          );
+        });
+    } catch (error) {
+      console.log(`⚠️ An error occurred: ${error}`);
+    }
   }
 
   return npkmn;
 }
-function fetchBulba(url) {
-  var pkmn = 'NULL';
-  if (url.includes('_(Pok%C3%A9mon)')) {
-    pkmn = url.replace('https://bulbapedia.bulbagarden.net/wiki/', '');
-    pkmn = pkmn.replace('_(Pok%C3%A9mon)', '');
-  }
-  return pkmn;
-}
-console.log(`Current Pokémon is: "${mon}" (Obtained via ${place})`);

@@ -1,0 +1,2128 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "english": "Bulbasaur",
+      "japanese": "フシギダネ",
+      "chinese": "妙蛙种子",
+      "french": "Bulbizarre"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "w05bewqAzX8",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 2,
+    "name": {
+      "english": "Ivysaur",
+      "japanese": "フシギソウ",
+      "chinese": "妙蛙草",
+      "french": "Herbizarre"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "HFf_nQeomYw",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 3,
+    "name": {
+      "english": "Venusaur",
+      "japanese": "フシギバナ",
+      "chinese": "妙蛙花",
+      "french": "Florizarre"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "HZNb-9bzR18",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 4,
+    "name": {
+      "english": "Charmander",
+      "japanese": "ヒトカゲ",
+      "chinese": "小火龙",
+      "french": "Salamèche"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "1u_snP2EACE",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 5,
+    "name": {
+      "english": "Charmeleon",
+      "japanese": "リザード",
+      "chinese": "火恐龙",
+      "french": "Reptincel"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "S3ytR_ctsh4",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 6,
+    "name": {
+      "english": "Charizard",
+      "japanese": "リザードン",
+      "chinese": "喷火龙",
+      "french": "Dracaufeu"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "bRcPR5S61oE",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 7,
+    "name": {
+      "english": "Squirtle",
+      "japanese": "ゼニガメ",
+      "chinese": "杰尼龟",
+      "french": "Carapuce"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "eWPzlTCEqq8",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 8,
+    "name": {
+      "english": "Wartortle",
+      "japanese": "カメール",
+      "chinese": "卡咪龟",
+      "french": "Carabaffe"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "uiNTxZcSZi8",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 9,
+    "name": {
+      "english": "Blastoise",
+      "japanese": "カメックス",
+      "chinese": "水箭龟",
+      "french": "Tortank"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "eIOKTPYXd6c",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 10,
+    "name": {
+      "english": "Caterpie",
+      "japanese": "キャタピー",
+      "chinese": "绿毛虫",
+      "french": "Chenipan"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "SBQJf0dHGwE",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 11,
+    "name": {
+      "english": "Metapod",
+      "japanese": "トランセル",
+      "chinese": "铁甲蛹",
+      "french": "Chrysacier"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "RtHe9HnzImo",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 12,
+    "name": {
+      "english": "Butterfree",
+      "japanese": "バタフリー",
+      "chinese": "巴大蝶",
+      "french": "Papilusion"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "zOkBUE4n9r4",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 13,
+    "name": {
+      "english": "Weedle",
+      "japanese": "ビードル",
+      "chinese": "独角虫",
+      "french": "Aspicot"
+    },
+    "img": null,
+    "game": "RB",
+    "link": "eTUpJfqDBVs",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 14,
+    "name": {
+      "english": "Kakuna",
+      "japanese": "コクーン",
+      "chinese": "铁壳蛹",
+      "french": "Coconfort"
+    },
+    "img": null,
+    "game": "RB",
+    "link": "K4UANHUjHHk",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 15,
+    "name": {
+      "english": "Beedrill",
+      "japanese": "スピアー",
+      "chinese": "大针蜂",
+      "french": "Dardargnan"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "pU0VKBFUtd0",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 16,
+    "name": {
+      "english": "Pidgey",
+      "japanese": "ポッポ",
+      "chinese": "波波",
+      "french": "Roucool"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "VSG6V2M1SSE",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 17,
+    "name": {
+      "english": "Pidgeotto",
+      "japanese": "ピジョン",
+      "chinese": "比比鸟",
+      "french": "Roucoups"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "POHmkUom3RE",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 18,
+    "name": {
+      "english": "Pidgeot",
+      "japanese": "ピジョット",
+      "chinese": "大比鸟",
+      "french": "Roucarnage"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "9fJaWHQE8-k",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 19,
+    "name": {
+      "english": "Rattata",
+      "japanese": "コラッタ",
+      "chinese": "小拉达",
+      "french": "Rattata"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "sK2vFqVxlWs",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 20,
+    "name": {
+      "english": "Raticate",
+      "japanese": "ラッタ",
+      "chinese": "拉达",
+      "french": "Rattatac"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "lcnIO2_cDu0",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 21,
+    "name": {
+      "english": "Spearow",
+      "japanese": "オニスズメ",
+      "chinese": "烈雀",
+      "french": "Piafabec"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "WE1pFEO1pRs",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 22,
+    "name": {
+      "english": "Fearow",
+      "japanese": "オニドリル",
+      "chinese": "大嘴雀",
+      "french": "Rapasdepic"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "vYCj_rv_CAU",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 23,
+    "name": {
+      "english": "Ekans",
+      "japanese": "アーボ",
+      "chinese": "阿柏蛇",
+      "french": "Abo"
+    },
+    "img": null,
+    "game": "R",
+    "link": "8JtOjqZoLpI",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 24,
+    "name": {
+      "english": "Arbok",
+      "japanese": "アーボック",
+      "chinese": "阿柏怪",
+      "french": "Arbok"
+    },
+    "img": null,
+    "game": "R",
+    "link": "F5yxFKX5R8I",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 25,
+    "name": {
+      "english": "Pikachu",
+      "japanese": "ピカチュウ",
+      "chinese": "皮卡丘",
+      "french": "Pikachu"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Wg1GmeXf-QQ",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "gift"]
+  },
+  {
+    "id": 26,
+    "name": {
+      "english": "Raichu",
+      "japanese": "ライチュウ",
+      "chinese": "雷丘",
+      "french": "Raichu"
+    },
+    "img": null,
+    "game": "RB",
+    "link": "QZHahUe_5pU",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 27,
+    "name": {
+      "english": "Sandshrew",
+      "japanese": "サンド",
+      "chinese": "穿山鼠",
+      "french": "Sabelette"
+    },
+    "img": null,
+    "game": "BY",
+    "link": "O-pKgY7qUjs",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 28,
+    "name": {
+      "english": "Sandslash",
+      "japanese": "サンドパン",
+      "chinese": "穿山王",
+      "french": "Sablaireau"
+    },
+    "img": null,
+    "game": "BY",
+    "link": "umDnSZ4mo7o",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 29,
+    "name": {
+      "english": "Nidoran♀",
+      "japanese": "ニドラン♀",
+      "chinese": "尼多兰",
+      "french": "Nidoran♀"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "HBcnwR3tTp0",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 30,
+    "name": {
+      "english": "Nidorina",
+      "japanese": "ニドリーナ",
+      "chinese": "尼多娜",
+      "french": "Nidorina"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "ECfDyofhshM",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 31,
+    "name": {
+      "english": "Nidoqueen",
+      "japanese": "ニドクイン",
+      "chinese": "尼多后",
+      "french": "Nidoqueen"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "csNsIZlFfg4",
+    "dexgen": "a",
+    "appendix": "moon_stone_evolution"
+  },
+  {
+    "id": 32,
+    "name": {
+      "english": "Nidoran♂",
+      "japanese": "ニドラン♂",
+      "chinese": "尼多朗",
+      "french": "Nidoran♂"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "g2fVGGohS3g",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 33,
+    "name": {
+      "english": "Nidorino",
+      "japanese": "ニドリーノ",
+      "chinese": "尼多力诺",
+      "french": "Nidorino"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "ntw9zz2NpNw",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 34,
+    "name": {
+      "english": "Nidoking",
+      "japanese": "ニドキング",
+      "chinese": "尼多王",
+      "french": "Nidoking"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "1858bGrBWi0",
+    "dexgen": "a",
+    "appendix": "moon_stone_evolution"
+  },
+  {
+    "id": 35,
+    "name": {
+      "english": "Clefairy",
+      "japanese": "ピッピ",
+      "chinese": "皮皮",
+      "french": "Mélofée"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "t113GHAMNtE",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 36,
+    "name": {
+      "english": "Clefable",
+      "japanese": "ピクシー",
+      "chinese": "皮可西",
+      "french": "Mélodelfe"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "ept8RlnO_yw",
+    "dexgen": "a",
+    "appendix": "moon_stone_evolution"
+  },
+  {
+    "id": 37,
+    "name": {
+      "english": "Vulpix",
+      "japanese": "ロコン",
+      "chinese": "六尾",
+      "french": "Goupix"
+    },
+    "img": null,
+    "game": "B",
+    "link": "mYVGHE8Wxxo",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 38,
+    "name": {
+      "english": "Ninetales",
+      "japanese": "キュウコン",
+      "chinese": "九尾",
+      "french": "Feunard"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "zmyqbHEnYbg",
+    "dexgen": "a",
+    "appendix": "fire_stone_evolution"
+  },
+  {
+    "id": 39,
+    "name": {
+      "english": "Jigglypuff",
+      "japanese": "プリン",
+      "chinese": "胖丁",
+      "french": "Rondoudou"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "txHQx1h53qw",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 40,
+    "name": {
+      "english": "Wigglytuff",
+      "japanese": "プクリン",
+      "chinese": "胖可丁",
+      "french": "Grodoudou"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "wLKwriCveHc",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "moon_stone_evolution"]
+  },
+  {
+    "id": 41,
+    "name": {
+      "english": "Zubat",
+      "japanese": "ズバット",
+      "chinese": "超音蝠",
+      "french": "Nosferapti"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "cpTyfxY2PCI",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 42,
+    "name": {
+      "english": "Golbat",
+      "japanese": "ゴルバット",
+      "chinese": "大嘴蝠",
+      "french": "Nosferalto"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "zKDc9OdAris",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 43,
+    "name": {
+      "english": "Oddish",
+      "japanese": "ナゾノクサ",
+      "chinese": "走路草",
+      "french": "Mystherbe"
+    },
+    "img": null,
+    "game": "RY",
+    "link": "9Q9w-wQe11Y",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 44,
+    "name": {
+      "english": "Gloom",
+      "japanese": "クサイハナ",
+      "chinese": "臭臭花",
+      "french": "Ortide"
+    },
+    "img": null,
+    "game": "RY",
+    "link": "iDWktbEsMu8",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 45,
+    "name": {
+      "english": "Vileplume",
+      "japanese": "ラフレシア",
+      "chinese": "霸王花",
+      "french": "Rafflesia"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "2o7klD3obVM",
+    "dexgen": "a",
+    "appendix": "leaf_stone_evolution"
+  },
+  {
+    "id": 46,
+    "name": {
+      "english": "Paras",
+      "japanese": "パラス",
+      "chinese": "派拉斯",
+      "french": "Paras"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "BnJ4Rfp5rjo",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 47,
+    "name": {
+      "english": "Parasect",
+      "japanese": "パラセクト",
+      "chinese": "派拉斯特",
+      "french": "Parasect"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "D9EhKpTvsK4",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 48,
+    "name": {
+      "english": "Venonat",
+      "japanese": "コンパン",
+      "chinese": "毛球",
+      "french": "Mimitoss"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "QHZPmf7wi2c",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 49,
+    "name": {
+      "english": "Venomoth",
+      "japanese": "モルフォン",
+      "chinese": "摩鲁蛾",
+      "french": "Aéromite"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "HlPlD7AWWKc",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 50,
+    "name": {
+      "english": "Diglett",
+      "japanese": "ディグダ",
+      "chinese": "地鼠",
+      "french": "Taupiqueur"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Duf5mbqstl8",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 51,
+    "name": {
+      "english": "Dugtrio",
+      "japanese": "ダグトリオ",
+      "chinese": "三地鼠",
+      "french": "Triopikeur"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "eolAxGonZaA",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 52,
+    "name": {
+      "english": "Meowth",
+      "japanese": "ニャース",
+      "chinese": "喵喵",
+      "french": "Miaouss"
+    },
+    "img": null,
+    "game": "B",
+    "link": "VnHD_uR4Tzs",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 53,
+    "name": {
+      "english": "Persian",
+      "japanese": "ペルシアン",
+      "chinese": "猫老大",
+      "french": "Persian"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "63lhTCrVtUw",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 54,
+    "name": {
+      "english": "Psyduck",
+      "japanese": "コダック",
+      "chinese": "可达鸭",
+      "french": "Psykokwak"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "XXb7qodP1Hs",
+    "dexgen": "a",
+    "appendix": ["surf", "super_rod"]
+  },
+  {
+    "id": 55,
+    "name": {
+      "english": "Golduck",
+      "japanese": "ゴルダック",
+      "chinese": "哥达鸭",
+      "french": "Akwakwak"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "8CARAU3gLNM",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 56,
+    "name": {
+      "english": "Mankey",
+      "japanese": "マンキー",
+      "chinese": "猴怪",
+      "french": "Férosinge"
+    },
+    "img": null,
+    "game": "RY",
+    "link": "qGfd_3GnEu8",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 57,
+    "name": {
+      "english": "Primeape",
+      "japanese": "オコリザル",
+      "chinese": "火暴猴",
+      "french": "Colossinge"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "NDRqXJMN038",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 58,
+    "name": {
+      "english": "Growlithe",
+      "japanese": "ガーディ",
+      "chinese": "卡蒂狗",
+      "french": "Caninos"
+    },
+    "img": null,
+    "game": "RY",
+    "link": "Boxzfj6Wkc0",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 59,
+    "name": {
+      "english": "Arcanine",
+      "japanese": "ウインディ",
+      "chinese": "风速狗",
+      "french": "Arcanin"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "wY7_4OV4p7s",
+    "dexgen": "a",
+    "appendix": "fire_stone_evolution"
+  },
+  {
+    "id": 60,
+    "name": {
+      "english": "Poliwag",
+      "japanese": "ニョロモ",
+      "chinese": "蚊香蝌蚪",
+      "french": "Ptitard"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "cfDlX4XU_Sk",
+    "dexgen": "a",
+    "appendix": "good_rod"
+  },
+  {
+    "id": 61,
+    "name": {
+      "english": "Poliwhirl",
+      "japanese": "ニョロゾ",
+      "chinese": "蚊香君",
+      "french": "Têtarte"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "qaCsaCeEBRM",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 62,
+    "name": {
+      "english": "Poliwrath",
+      "japanese": "ニョロボン",
+      "chinese": "蚊香泳士",
+      "french": "Tartard"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "42u9v_TvtYo",
+    "dexgen": "a",
+    "appendix": "water_stone_evolution"
+  },
+  {
+    "id": 63,
+    "name": {
+      "english": "Abra",
+      "japanese": "ケーシィ",
+      "chinese": "凯西",
+      "french": "Abra"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "h38l9wuX6CM",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 64,
+    "name": {
+      "english": "Kadabra",
+      "japanese": "ユンゲラー",
+      "chinese": "勇基拉",
+      "french": "Kadabra"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "r-14PHneQYA",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 65,
+    "name": {
+      "english": "Alakazam",
+      "japanese": "フーディン",
+      "chinese": "胡地",
+      "french": "Alakazam"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "G-otIX0Vry8",
+    "dexgen": "a",
+    "appendix": "trade_evolution"
+  },
+  {
+    "id": 66,
+    "name": {
+      "english": "Machop",
+      "japanese": "ワンリキー",
+      "chinese": "腕力",
+      "french": "Machoc"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Ffy1d85ptZI",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 67,
+    "name": {
+      "english": "Machoke",
+      "japanese": "ゴーリキー",
+      "chinese": "豪力",
+      "french": "Machopeur"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "WvYTsg--xpw",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 68,
+    "name": {
+      "english": "Machamp",
+      "japanese": "カイリキー",
+      "chinese": "怪力",
+      "french": "Mackogneur"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "rWCGct9qhTo",
+    "dexgen": "a",
+    "appendix": "trade_evolution"
+  },
+  {
+    "id": 69,
+    "name": {
+      "english": "Bellsprout",
+      "japanese": "マダツボミ",
+      "chinese": "喇叭芽",
+      "french": "Chétiflor"
+    },
+    "img": null,
+    "game": "BY",
+    "link": "B8kCGPQDJvE",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 70,
+    "name": {
+      "english": "Weepinbell",
+      "japanese": "ウツドン",
+      "chinese": "口呆花",
+      "french": "Boustiflor"
+    },
+    "img": null,
+    "game": "BY",
+    "link": "YW2v_qkqNkQ",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 71,
+    "name": {
+      "english": "Victreebel",
+      "japanese": "ウツボット",
+      "chinese": "大食花",
+      "french": "Empiflor"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "PEJyeKg39gI",
+    "dexgen": "a",
+    "appendix": "leaf_stone_evolution"
+  },
+  {
+    "id": 72,
+    "name": {
+      "english": "Tentacool",
+      "japanese": "メノクラゲ",
+      "chinese": "玛瑙水母",
+      "french": "Tentacool"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "ARWpXDJXm4g",
+    "dexgen": "a",
+    "appendix": "surf"
+  },
+  {
+    "id": 73,
+    "name": {
+      "english": "Tentacruel",
+      "japanese": "ドククラゲ",
+      "chinese": "毒刺水母",
+      "french": "Tentacruel"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "QmRQ0aXHbwo",
+    "dexgen": "a",
+    "appendix": ["super_rod", "evolution"]
+  },
+  {
+    "id": 74,
+    "name": {
+      "english": "Geodude",
+      "japanese": "イシツブテ",
+      "chinese": "小拳石",
+      "french": "Racaillou"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "z60vd3mxMcc",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 75,
+    "name": {
+      "english": "Graveler",
+      "japanese": "ゴローン",
+      "chinese": "隆隆石",
+      "french": "Gravalanch"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "PahBYkLadyU",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 76,
+    "name": {
+      "english": "Golem",
+      "japanese": "ゴローニャ",
+      "chinese": "隆隆岩",
+      "french": "Grolem"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "qLJe_vi_B3s",
+    "dexgen": "a",
+    "appendix": "trade_evolution"
+  },
+  {
+    "id": 77,
+    "name": {
+      "english": "Ponyta",
+      "japanese": "ポニータ",
+      "chinese": "小火马",
+      "french": "Ponyta"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "h2Cqkb0dYwc",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 78,
+    "name": {
+      "english": "Rapidash",
+      "japanese": "ギャロップ",
+      "chinese": "烈焰马",
+      "french": "Galopa"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "oKdeF3Ec__M",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 79,
+    "name": {
+      "english": "Slowpoke",
+      "japanese": "ヤドン",
+      "chinese": "呆呆兽",
+      "french": "Ramoloss"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "OOMqjKooldc",
+    "dexgen": "a",
+    "appendix": ["super_rod", "surf"]
+  },
+  {
+    "id": 80,
+    "name": {
+      "english": "Slowbro",
+      "japanese": "ヤドラン",
+      "chinese": "呆壳兽",
+      "french": "Flagadoss"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "ObykytrR8Lg",
+    "dexgen": "a",
+    "appendix": ["super_rod", "surf"]
+  },
+  {
+    "id": 81,
+    "name": {
+      "english": "Magnemite",
+      "japanese": "コイル",
+      "chinese": "小磁怪",
+      "french": "Magnéti"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "NozPYoiKfao",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 82,
+    "name": {
+      "english": "Magneton",
+      "japanese": "レアコイル",
+      "chinese": "三合一磁怪",
+      "french": "Magnéton"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "F88DLu8wcxk",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 83,
+    "name": {
+      "english": "Farfetch'd",
+      "japanese": "カモネギ",
+      "chinese": "大葱鸭",
+      "french": "Canarticho"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "wZlSRv6Vs7k",
+    "dexgen": "a",
+    "appendix": ["npc_trade", "NEncounter"]
+  },
+  {
+    "id": 84,
+    "name": {
+      "english": "Doduo",
+      "japanese": "ドードー",
+      "chinese": "嘟嘟",
+      "french": "Doduo"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Vyh3Ko7g3Bg",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 85,
+    "name": {
+      "english": "Dodrio",
+      "japanese": "ドードリオ",
+      "chinese": "嘟嘟利",
+      "french": "Dodrio"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "UqHCSJGSUEA",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 86,
+    "name": {
+      "english": "Seel",
+      "japanese": "パウワウ",
+      "chinese": "小海狮",
+      "french": "Otaria"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "xwdKEuLj74E",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 87,
+    "name": {
+      "english": "Dewgong",
+      "japanese": "ジュゴン",
+      "chinese": "白海狮",
+      "french": "Lamantine"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "VBWVVGclIVw",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 88,
+    "name": {
+      "english": "Grimer",
+      "japanese": "ベトベター",
+      "chinese": "臭泥",
+      "french": "Tadmorv"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "0XQylECCgaE",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 89,
+    "name": {
+      "english": "Muk",
+      "japanese": "ベトベトン",
+      "chinese": "臭臭泥",
+      "french": "Grotadmorv"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Daqzf0BUob0",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 90,
+    "name": {
+      "english": "Shellder",
+      "japanese": "シェルダー",
+      "chinese": "大舌贝",
+      "french": "Kokiyas"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "HHYSWyTisBE",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 91,
+    "name": {
+      "english": "Cloyster",
+      "japanese": "パルシェン",
+      "chinese": "刺甲贝",
+      "french": "Crustabri"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "1ZE6UMmCg3I",
+    "dexgen": "a",
+    "appendix": "water_stone_evolution"
+  },
+  {
+    "id": 92,
+    "name": {
+      "english": "Gastly",
+      "japanese": "ゴース",
+      "chinese": "鬼斯",
+      "french": "Fantominus"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "f_4YmCfydtc",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "silth_scope"]
+  },
+  {
+    "id": 93,
+    "name": {
+      "english": "Haunter",
+      "japanese": "ゴースト",
+      "chinese": "鬼斯通",
+      "french": "Spectrum"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "glounyktg-M",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "silth_scope"]
+  },
+  {
+    "id": 94,
+    "name": {
+      "english": "Gengar",
+      "japanese": "ゲンガー",
+      "chinese": "耿鬼",
+      "french": "Ectoplasma"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "K5m_-IrFMuU",
+    "dexgen": "a",
+    "appendix": "trade_evolution"
+  },
+  {
+    "id": 95,
+    "name": {
+      "english": "Onix",
+      "japanese": "イワーク",
+      "chinese": "大岩蛇",
+      "french": "Onix"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "5obn5PrdA3U",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 96,
+    "name": {
+      "english": "Drowzee",
+      "japanese": "スリープ",
+      "chinese": "催眠貘",
+      "french": "Soporifik"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "0jUmN2TzP4k",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 97,
+    "name": {
+      "english": "Hypno",
+      "japanese": "スリーパー",
+      "chinese": "引梦貘人",
+      "french": "Hypnomade"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "DfCb0I98wpo",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "evolution"]
+  },
+  {
+    "id": 98,
+    "name": {
+      "english": "Krabby",
+      "japanese": "クラブ",
+      "chinese": "大钳蟹",
+      "french": "Krabby"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "slWYvLYzgME",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 99,
+    "name": {
+      "english": "Kingler",
+      "japanese": "キングラー",
+      "chinese": "巨钳蟹",
+      "french": "Krabboss"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Xukwj_CwBcI",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 100,
+    "name": {
+      "english": "Voltorb",
+      "japanese": "ビリリダマ",
+      "chinese": "霹雳电球",
+      "french": "Voltorbe"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "bCkwnCMsSs8",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 101,
+    "name": {
+      "english": "Electrode",
+      "japanese": "マルマイン",
+      "chinese": "顽皮雷弹",
+      "french": "Électrode"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "gNrfcCe32i4",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "evolution"]
+  },
+  {
+    "id": 102,
+    "name": {
+      "english": "Exeggcute",
+      "japanese": "タマタマ",
+      "chinese": "蛋蛋",
+      "french": "Noeunoeuf"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "lx0EAByk9bY",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 103,
+    "name": {
+      "english": "Exeggutor",
+      "japanese": "ナッシー",
+      "chinese": "椰蛋树",
+      "french": "Noadkoko"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "__jhRBw6v5Q",
+    "dexgen": "a",
+    "appendix": "leaf_stone_evolution"
+  },
+  {
+    "id": 104,
+    "name": {
+      "english": "Cubone",
+      "japanese": "カラカラ",
+      "chinese": "卡拉卡拉",
+      "french": "Osselait"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "sq9KKjSFvbA",
+    "dexgen": "a",
+    "appendix": ["NEncounter", "silth_scope"]
+  },
+  {
+    "id": 105,
+    "name": {
+      "english": "Marowak",
+      "japanese": "ガラガラ",
+      "chinese": "嘎啦嘎啦",
+      "french": "Ossatueur"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "udpm8sLh3rU",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 106,
+    "name": {
+      "english": "Hitmonlee",
+      "japanese": "サワムラー",
+      "chinese": "飞腿郎",
+      "french": "Kicklee"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "1TPj_FUkuh0",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 107,
+    "name": {
+      "english": "Hitmonchan",
+      "japanese": "エビワラー",
+      "chinese": "快拳郎",
+      "french": "Tygnon"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "7B-rG9k8mhY",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 108,
+    "name": {
+      "english": "Lickitung",
+      "japanese": "ベロリンガ",
+      "chinese": "大舌头",
+      "french": "Excelangue"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Ah91WWBzO0U",
+    "dexgen": "a",
+    "appendix": ["npc_trade", "NEncounter"]
+  },
+  {
+    "id": 109,
+    "name": {
+      "english": "Koffing",
+      "japanese": "ドガース",
+      "chinese": "瓦斯弹",
+      "french": "Smogo"
+    },
+    "img": null,
+    "game": "RB",
+    "link": "pT90aj4e1TY",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 110,
+    "name": {
+      "english": "Weezing",
+      "japanese": "マタドガス",
+      "chinese": "双弹瓦斯",
+      "french": "Smogogo"
+    },
+    "img": null,
+    "game": "RB",
+    "link": "Yhv6-DRBkTg",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 111,
+    "name": {
+      "english": "Rhyhorn",
+      "japanese": "サイホーン",
+      "chinese": "独角犀牛",
+      "french": "Rhinocorne"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Co_xIlJ-eVM",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 112,
+    "name": {
+      "english": "Rhydon",
+      "japanese": "サイドン",
+      "chinese": "钻角犀兽",
+      "french": "Rhinoféros"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "DWfq-9n6rTc",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 113,
+    "name": {
+      "english": "Chansey",
+      "japanese": "ラッキー",
+      "chinese": "吉利蛋",
+      "french": "Leveinard"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "-leMpNN9DyQ",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 114,
+    "name": {
+      "english": "Tangela",
+      "japanese": "モンジャラ",
+      "chinese": "蔓藤怪",
+      "french": "Saquedeneu"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "ALtytE0TnWo",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 115,
+    "name": {
+      "english": "Kangaskhan",
+      "japanese": "ガルーラ",
+      "chinese": "袋兽",
+      "french": "Kangourex"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "5zjt-TiyfFQ",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 116,
+    "name": {
+      "english": "Horsea",
+      "japanese": "タッツー",
+      "chinese": "墨海马",
+      "french": "Hypotrempe"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "DqQ1-9LWY_4",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 117,
+    "name": {
+      "english": "Seadra",
+      "japanese": "シードラ",
+      "chinese": "海刺龙",
+      "french": "Hypocéan"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "J78PIguP0Wc",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 118,
+    "name": {
+      "english": "Goldeen",
+      "japanese": "トサキント",
+      "chinese": "角金鱼",
+      "french": "Poissirène"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "-hefyUuRexA",
+    "dexgen": "a",
+    "appendix": "good_rod"
+  },
+  {
+    "id": 119,
+    "name": {
+      "english": "Seaking",
+      "japanese": "アズマオウ",
+      "chinese": "金鱼王",
+      "french": "Poissoroy"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "AR096DaN-DM",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 120,
+    "name": {
+      "english": "Staryu",
+      "japanese": "ヒトデマン",
+      "chinese": "海星星",
+      "french": "Stari"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "asK6y6AqrfA",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 121,
+    "name": {
+      "english": "Starmie",
+      "japanese": "スターミー",
+      "chinese": "宝石海星",
+      "french": "Staross"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "lcAwYkEopJI",
+    "dexgen": "a",
+    "appendix": "water_stone_evolution"
+  },
+  {
+    "id": 122,
+    "name": {
+      "english": "Mr. Mime",
+      "japanese": "バリヤード",
+      "chinese": "魔墙人偶",
+      "french": "M. Mime"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "UjykyOxJYG8",
+    "dexgen": "a",
+    "appendix": "npc_trade"
+  },
+  {
+    "id": 123,
+    "name": {
+      "english": "Scyther",
+      "japanese": "ストライク",
+      "chinese": "飞天螳螂",
+      "french": "Insécateur"
+    },
+    "img": null,
+    "game": "RY",
+    "link": "jz5-mpiIO8U",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 124,
+    "name": {
+      "english": "Jynx",
+      "japanese": "ルージュラ",
+      "chinese": "迷唇姐",
+      "french": "Lippoutou"
+    },
+    "img": null,
+    "game": "RB",
+    "link": "TGQZSFKadoQ",
+    "dexgen": "a",
+    "appendix": "npc_trade"
+  },
+  {
+    "id": 125,
+    "name": {
+      "english": "Electabuzz",
+      "japanese": "エレブー",
+      "chinese": "电击兽",
+      "french": "Élektek"
+    },
+    "img": null,
+    "game": "R",
+    "link": "La0iqw65c8w",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 126,
+    "name": {
+      "english": "Magmar",
+      "japanese": "ブーバー",
+      "chinese": "鸭嘴火兽",
+      "french": "Magmar"
+    },
+    "img": null,
+    "game": "B",
+    "link": "MInv1IqLLLA",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 127,
+    "name": {
+      "english": "Pinsir",
+      "japanese": "カイロス",
+      "chinese": "凯罗斯",
+      "french": "Scarabrute"
+    },
+    "img": null,
+    "game": "BY",
+    "link": "SRcwE8imzUI",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 128,
+    "name": {
+      "english": "Tauros",
+      "japanese": "ケンタロス",
+      "chinese": "肯泰罗",
+      "french": "Tauros"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "TDVfguH-tec",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 129,
+    "name": {
+      "english": "Magikarp",
+      "japanese": "コイキング",
+      "chinese": "鲤鱼王",
+      "french": "Magicarpe"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "CzxbMhbhqz8",
+    "dexgen": "a",
+    "appendix": "old_rod"
+  },
+  {
+    "id": 130,
+    "name": {
+      "english": "Gyarados",
+      "japanese": "ギャラドス",
+      "chinese": "暴鲤龙",
+      "french": "Léviator"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "OJzHNOJWYkY",
+    "dexgen": "a",
+    "appendix": ["evolution", "super_rod"]
+  },
+  {
+    "id": 131,
+    "name": {
+      "english": "Lapras",
+      "japanese": "ラプラス",
+      "chinese": "拉普拉斯",
+      "french": "Lokhlass"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "XmFxgaUr8nk",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 132,
+    "name": {
+      "english": "Ditto",
+      "japanese": "メタモン",
+      "chinese": "百变怪",
+      "french": "Métamorph"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "s-I-K_a0a_E",
+    "dexgen": "a",
+    "appendix": "NEncounter"
+  },
+  {
+    "id": 133,
+    "name": {
+      "english": "Eevee",
+      "japanese": "イーブイ",
+      "chinese": "伊布",
+      "french": "Évoli"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "yvxMhMdHlAY",
+    "dexgen": "a",
+    "appendix": "gift"
+  },
+  {
+    "id": 134,
+    "name": {
+      "english": "Vaporeon",
+      "japanese": "シャワーズ",
+      "chinese": "水伊布",
+      "french": "Aquali"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "OGalnHG3Vag",
+    "dexgen": "a",
+    "appendix": "water_stone_evolution"
+  },
+  {
+    "id": 135,
+    "name": {
+      "english": "Jolteon",
+      "japanese": "サンダース",
+      "chinese": "雷伊布",
+      "french": "Voltali"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "Ya-I8pdB4M4",
+    "dexgen": "a",
+    "appendix": "thunder_stone_evolution"
+  },
+  {
+    "id": 136,
+    "name": {
+      "english": "Flareon",
+      "japanese": "ブースター",
+      "chinese": "火伊布",
+      "french": "Pyroli"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "lK7NnRuESKI",
+    "dexgen": "a",
+    "appendix": "fire_stone_evolution"
+  },
+  {
+    "id": 137,
+    "name": {
+      "english": "Porygon",
+      "japanese": "ポリゴン",
+      "chinese": "多边兽",
+      "french": "Porygon"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "O6E-2ciW2Ag",
+    "dexgen": "a",
+    "appendix": "game_corner"
+  },
+  {
+    "id": 138,
+    "name": {
+      "english": "Omanyte",
+      "japanese": "オムナイト",
+      "chinese": "菊石兽",
+      "french": "Amonita"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "6yt1L1BiWaI",
+    "dexgen": "a",
+    "appendix": "fossil"
+  },
+  {
+    "id": 139,
+    "name": {
+      "english": "Omastar",
+      "japanese": "オムスター",
+      "chinese": "多刺菊石兽",
+      "french": "Amonistar"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "E7UCny8i2nE",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 140,
+    "name": {
+      "english": "Kabuto",
+      "japanese": "カブト",
+      "chinese": "化石盔",
+      "french": "Kabuto"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "qyaa4AzMaC0",
+    "dexgen": "a",
+    "appendix": "fossil"
+  },
+  {
+    "id": 141,
+    "name": {
+      "english": "Kabutops",
+      "japanese": "カブトプス",
+      "chinese": "镰刀盔",
+      "french": "Kabutops"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "12_wvWGd5K8",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 142,
+    "name": {
+      "english": "Aerodactyl",
+      "japanese": "プテラ",
+      "chinese": "化石翼龙",
+      "french": "Ptéra"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "FlNE8rjXJTU",
+    "dexgen": "a",
+    "appendix": "fossil"
+  },
+  {
+    "id": 143,
+    "name": {
+      "english": "Snorlax",
+      "japanese": "カビゴン",
+      "chinese": "卡比兽",
+      "french": "Ronflex"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "XHzkp5vEJvs",
+    "dexgen": "a",
+    "appendix": ["limited_encounter", "poke_flute"]
+  },
+  {
+    "id": 144,
+    "name": {
+      "english": "Articuno",
+      "japanese": "フリーザー",
+      "chinese": "急冻鸟",
+      "french": "Artikodin"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "3xfL8EPdznA",
+    "dexgen": "a",
+    "appendix": "single_encounter"
+  },
+  {
+    "id": 144,
+    "name": {
+      "english": "Articuno",
+      "japanese": "フリーザー",
+      "chinese": "急冻鸟",
+      "french": "Artikodin"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "3xfL8EPdznA",
+    "dexgen": "a",
+    "appendix": "single_encounter"
+  },
+  {
+    "id": 145,
+    "name": {
+      "english": "Zapdos",
+      "japanese": "サンダー",
+      "chinese": "闪电鸟",
+      "french": "Électhor"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "WxijLmzQcPE",
+    "dexgen": "a",
+    "appendix": "single_encounter"
+  },
+  {
+    "id": 146,
+    "name": {
+      "english": "Moltres",
+      "japanese": "ファイヤー",
+      "chinese": "火焰鸟",
+      "french": "Sulfura"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "iNWfA4Yh36s",
+    "dexgen": "a",
+    "appendix": "single_encounter"
+  },
+  {
+    "id": 147,
+    "name": {
+      "english": "Dratini",
+      "japanese": "ミニリュウ",
+      "chinese": "迷你龙",
+      "french": "Minidraco"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "gSuQ-PyObpI",
+    "dexgen": "a",
+    "appendix": "super_rod"
+  },
+  {
+    "id": 148,
+    "name": {
+      "english": "Dragonair",
+      "japanese": "ハクリュー",
+      "chinese": "哈克龙",
+      "french": "Draco"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "C-3zTCuE3nY",
+    "dexgen": "a",
+    "appendix": ["super_rod", "evolution"]
+  },
+  {
+    "id": 149,
+    "name": {
+      "english": "Dragonite",
+      "japanese": "カイリュー",
+      "chinese": "快龙",
+      "french": "Dracolosse"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "L0pYmsQUt2Y",
+    "dexgen": "a",
+    "appendix": "evolution"
+  },
+  {
+    "id": 150,
+    "name": {
+      "english": "Mewtwo",
+      "japanese": "ミュウツー",
+      "chinese": "超梦",
+      "french": "Mewtwo"
+    },
+    "img": null,
+    "game": "RBY",
+    "link": "kDyo0jTScCo",
+    "dexgen": "a",
+    "appendix": "single_encounter"
+  },
+  {
+    "id": 151,
+    "name": {
+      "english": "Mew",
+      "japanese": "ミュウ",
+      "chinese": "梦幻",
+      "french": "Mew"
+    },
+    "variation": "normal",
+    "img": null,
+    "videos": null
+  }
+]

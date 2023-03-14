@@ -17,6 +17,12 @@
   "background": {
     "service_worker": "background.js"
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/db/g1/main.json", "assets/db/g1/appendix.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "options_page": "options/options.html",
   "content_scripts": [
     {
