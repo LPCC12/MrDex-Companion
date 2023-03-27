@@ -4,6 +4,11 @@ let mon;
 let gen = 4456496; //Gen 0 = various generations available. Default value means not defined
 let place;
 let url = location.href;
+let dev;
+
+chrome.storage.local.get('devmode', function (result) {
+  dev = result.devmode;
+});
 
 if (!url) {
   console.log('⚠️ Unable to get a url from the current session.');
@@ -23,17 +28,28 @@ function fetchSerebii(url) {
       npkmn = url.replace('https://www.serebii.net/pokedex/', '');
       npkmn = npkmn.replace('.shtml', '');
 
-      const localurl = chrome.runtime.getURL('./assets/db/g1/main.json');
+      const g1localurl = chrome.runtime.getURL('./assets/db/g1/main.json');
 
-      fetch(localurl)
+      fetch(g1localurl)
         .then((response) => response.json())
         .then((data) => {
-          var temp = npkmn.replace('0', '');
-          console.log(
-            `ℹ️ Fetched a pkmn id ${
-              data[temp - 1].id
-            } -> video https://youtu.be/${data[temp - 1].link}.`
-          );
+          if (!data[npkmn - 1].link) {
+            console.log('🛑 This Pokémon did not return a video');
+          } else {
+            console.log(
+              `⚪ Fetched a video: https://youtu.be/${data[npkmn - 1].link}`
+            );
+          }
+
+          if (dev) {
+            console.log(
+              `🟣 Pokémon:${data[npkmn - 1].name.english} Gen:${gen} ID:${
+                data[npkmn - 1].id
+              } DGen:${data[npkmn - 1].dexgen} Appendix:${
+                data[npkmn - 1].appendix
+              } Games: ${data[npkmn - 1].game}`
+            );
+          }
         });
     } catch (error) {
       console.log(`⚠️ An error occurred: ${error}`);

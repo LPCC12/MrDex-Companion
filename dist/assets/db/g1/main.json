@@ -2016,20 +2016,6 @@
     "appendix": "single_encounter"
   },
   {
-    "id": 144,
-    "name": {
-      "english": "Articuno",
-      "japanese": "フリーザー",
-      "chinese": "急冻鸟",
-      "french": "Artikodin"
-    },
-    "img": null,
-    "game": "RBY",
-    "link": "3xfL8EPdznA",
-    "dexgen": "a",
-    "appendix": "single_encounter"
-  },
-  {
     "id": 145,
     "name": {
       "english": "Zapdos",

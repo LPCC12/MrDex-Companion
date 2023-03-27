@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mr. Pokédex Companion",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Video Database for your Catch' em All!",
   "icons": {
     "16": "assets/icon.png",
@@ -19,7 +19,11 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["assets/db/g1/main.json", "assets/db/g1/appendix.json"],
+      "resources": [
+        "assets/db/g1/main.json",
+        "assets/db/g1/appendix.json",
+        "assets/config/cfg.json"
+      ],
       "matches": ["<all_urls>"]
     }
   ],
