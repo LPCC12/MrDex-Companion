@@ -1,21 +1,43 @@
-.noty_overlay {
+.icon {
   position: fixed;
   bottom: 100px;
   right: 0;
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-radius: 50px 0px 0px 50px;
+  width: 128px;
+  height: 128px;
+  z-index: 201;
+  animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 50px 0 0 50px;
   background: #f38258;
-  padding: 20px;
+  padding: 15px;
   width: 500px;
   height: 500px;
   z-index: 200;
   opacity: 0;
-  animation: fade-in 0.5s ease-in-out forwards;
+  animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.ov-header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.ov-header img {
+  margin-right: 10px; /* Adds 10px margin to the right of the image */
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
 }
 
 .close_btn {
@@ -42,7 +64,12 @@
   }
 }
 
-.img_medium {
+.imgM {
+  height: 64px;
+  width: 64px;
+}
+
+.imgS {
   height: 32px;
   width: 32px;
 }

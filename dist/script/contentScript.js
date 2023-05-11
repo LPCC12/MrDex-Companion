@@ -13,7 +13,7 @@ chrome.storage.local.get('devmode', function (result) {
 if (!url) {
   console.log('⚠️ Unable to get a url from the current session.');
 } else if (url.includes('serebii.net')) {
-  fetchSerebii(url);
+  icon();
 }
 
 function fetchSerebii(url) {
@@ -67,6 +67,17 @@ function fetchSerebii(url) {
   }
   // return npkmn;
 }
+function icon() {
+  const icon_el = document.createElement('img');
+  icon_el.className = 'icon';
+  icon_el.src = 'https://i.imgur.com/PIzhW7c.png';
+  document.body.appendChild(icon_el);
+
+  icon_el.addEventListener('click', function () {
+    icon_el.parentNode.removeChild(icon_el);
+    fetchSerebii(url);
+  });
+}
 
 function overlay(
   numPK,
@@ -78,20 +89,43 @@ function overlay(
   gamesPK,
   vidID
 ) {
+  //Font usada no overlay
+  const l1 = document.createElement('link');
+  l1.rel = 'preconnect';
+  l1.href = 'https://fonts.googleapis.com';
+  const l2 = document.createElement('link');
+  l2.rel = 'preconnect';
+  l2.href = 'https://fonts.gstatic.com';
+  l2.crossOrigin;
+  const l3 = document.createElement('link');
+  l3.rel = 'stylesheet';
+  l3.href =
+    'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+
+  document.head.appendChild(l1);
+  document.head.appendChild(l2);
+  document.head.appendChild(l3);
+
   const element = document.createElement('div');
-  element.className = 'noty_overlay';
+  element.className = 'overlay';
+
+  //Header
+  const headerElement = document.createElement('div');
+  headerElement.className = 'ov-header';
 
   //Logo
   const logo = document.createElement('img');
-  logo.className = 'img_medium';
+  logo.className = 'imgM';
   logo.src =
     'https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr';
-  element.appendChild(logo);
+  headerElement.appendChild(logo);
 
-  //Header
-  const header = document.createElement('h4');
-  header.innerText = 'Mr. Pokédex';
-  element.appendChild(header);
+  //Titulo Header
+  const Theader = document.createElement('h3');
+  Theader.innerText = 'Mr. Pokédex';
+  headerElement.appendChild(Theader);
+
+  element.appendChild(headerElement);
 
   //Close button
   const closeButton = document.createElement('button');
@@ -99,6 +133,7 @@ function overlay(
   closeButton.innerText = 'Close';
   closeButton.onclick = function () {
     element.parentNode.removeChild(element);
+    icon();
   };
   element.appendChild(closeButton);
 
@@ -142,54 +177,15 @@ function overlay(
   element.appendChild(videoContainer);
 
   //Visit in Youtube
+
+  /*
   const ytBTN = document.createElement('button');
   ytBTN.innerText = 'YT';
   ytBTN.onclick = function () {
     alert('fart');
   };
   element.appendChild(ytBTN);
-
-  /*
-  // Create the link
-  const link = document.createElement('a');
-  link.href = 'https://www.pokemon.com/';
-  link.innerText = 'Visit Pokemon Website';
-  element.appendChild(link);
-
-  // Create the data container
-  const dataContainer = document.createElement('div');
-  dataContainer.className = 'data_container';
-  element.appendChild(dataContainer);
-
-  // Create the data elements
-  const numElement = document.createElement('p');
-  numElement.innerText = `Pokemon Number: ${numPK}`;
-  dataContainer.appendChild(numElement);
-
-  const engnameElement = document.createElement('p');
-  engnameElement.innerText = `English Name: ${engnamePK}`;
-  dataContainer.appendChild(engnameElement);
-
-  const gameGENElement = document.createElement('p');
-  gameGENElement.innerText = `Game Generation: ${gameGEN}`;
-  dataContainer.appendChild(gameGENElement);
-
-  const dexGENElement = document.createElement('p');
-  dexGENElement.innerText = `Dex Generation: ${dexGEN}`;
-  dataContainer.appendChild(dexGENElement);
-
-  const natIDElement = document.createElement('p');
-  natIDElement.innerText = `National ID: ${natID}`;
-  dataContainer.appendChild(natIDElement);
-
-  const dexAPDElement = document.createElement('p');
-  dexAPDElement.innerText = `Dex Appearance: ${dexAPD}`;
-  dataContainer.appendChild(dexAPDElement);
-
-  const gamesPKElement = document.createElement('p');
-  gamesPKElement.innerText = `Games: ${gamesPK}`;
-  dataContainer.appendChild(gamesPKElement);
-  */
+*/
 
   document.body.appendChild(element);
 }

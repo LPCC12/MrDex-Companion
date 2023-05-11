@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mr. Pokédex Companion",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Video Database for your Catch' em All!",
   "icons": {
     "16": "assets/icon.png",
