@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mr. Pokédex Companion",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Video Database for your Catch' em All!",
   "icons": {
     "16": "assets/icon.png",
@@ -13,7 +13,7 @@
     "default_title": "Mr. Pokédex Companion",
     "default_popup": "popup/default.html"
   },
-  "permissions": ["storage", "alarms", "notifications", "tabs"],
+  "permissions": ["storage", "alarms", "notifications", "tabs", "activeTab"],
   "background": {
     "service_worker": "background.js"
   },
