@@ -7,7 +7,7 @@
       "chinese": "妙蛙种子",
       "french": "Bulbizarre"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "w05bewqAzX8",
     "dexgen": "a",
@@ -21,7 +21,7 @@
       "chinese": "妙蛙草",
       "french": "Herbizarre"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "HFf_nQeomYw",
     "dexgen": "a",
@@ -35,7 +35,7 @@
       "chinese": "妙蛙花",
       "french": "Florizarre"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "HZNb-9bzR18",
     "dexgen": "a",
@@ -49,7 +49,7 @@
       "chinese": "小火龙",
       "french": "Salamèche"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "1u_snP2EACE",
     "dexgen": "a",
@@ -63,7 +63,7 @@
       "chinese": "火恐龙",
       "french": "Reptincel"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "S3ytR_ctsh4",
     "dexgen": "a",
@@ -77,7 +77,7 @@
       "chinese": "喷火龙",
       "french": "Dracaufeu"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "bRcPR5S61oE",
     "dexgen": "a",
@@ -91,7 +91,7 @@
       "chinese": "杰尼龟",
       "french": "Carapuce"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "eWPzlTCEqq8",
     "dexgen": "a",
@@ -105,7 +105,7 @@
       "chinese": "卡咪龟",
       "french": "Carabaffe"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "uiNTxZcSZi8",
     "dexgen": "a",
@@ -119,7 +119,7 @@
       "chinese": "水箭龟",
       "french": "Tortank"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "eIOKTPYXd6c",
     "dexgen": "a",
@@ -133,7 +133,7 @@
       "chinese": "绿毛虫",
       "french": "Chenipan"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "SBQJf0dHGwE",
     "dexgen": "a",
@@ -147,7 +147,7 @@
       "chinese": "铁甲蛹",
       "french": "Chrysacier"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "RtHe9HnzImo",
     "dexgen": "a",
@@ -161,7 +161,7 @@
       "chinese": "巴大蝶",
       "french": "Papilusion"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "zOkBUE4n9r4",
     "dexgen": "a",
@@ -175,7 +175,7 @@
       "chinese": "独角虫",
       "french": "Aspicot"
     },
-    "img": null,
+    "img": "insect",
     "game": "RB",
     "link": "eTUpJfqDBVs",
     "dexgen": "a",
@@ -189,7 +189,7 @@
       "chinese": "铁壳蛹",
       "french": "Coconfort"
     },
-    "img": null,
+    "img": "insect",
     "game": "RB",
     "link": "K4UANHUjHHk",
     "dexgen": "a",
@@ -203,7 +203,7 @@
       "chinese": "大针蜂",
       "french": "Dardargnan"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "pU0VKBFUtd0",
     "dexgen": "a",
@@ -217,7 +217,7 @@
       "chinese": "波波",
       "french": "Roucool"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "VSG6V2M1SSE",
     "dexgen": "a",
@@ -231,7 +231,7 @@
       "chinese": "比比鸟",
       "french": "Roucoups"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "POHmkUom3RE",
     "dexgen": "a",
@@ -245,7 +245,7 @@
       "chinese": "大比鸟",
       "french": "Roucarnage"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "9fJaWHQE8-k",
     "dexgen": "a",
@@ -259,7 +259,7 @@
       "chinese": "小拉达",
       "french": "Rattata"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "sK2vFqVxlWs",
     "dexgen": "a",
@@ -273,7 +273,7 @@
       "chinese": "拉达",
       "french": "Rattatac"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "lcnIO2_cDu0",
     "dexgen": "a",
@@ -287,7 +287,7 @@
       "chinese": "烈雀",
       "french": "Piafabec"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "WE1pFEO1pRs",
     "dexgen": "a",
@@ -301,7 +301,7 @@
       "chinese": "大嘴雀",
       "french": "Rapasdepic"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "vYCj_rv_CAU",
     "dexgen": "a",
@@ -315,7 +315,7 @@
       "chinese": "阿柏蛇",
       "french": "Abo"
     },
-    "img": null,
+    "img": "snake",
     "game": "R",
     "link": "8JtOjqZoLpI",
     "dexgen": "a",
@@ -329,7 +329,7 @@
       "chinese": "阿柏怪",
       "french": "Arbok"
     },
-    "img": null,
+    "img": "snake",
     "game": "R",
     "link": "F5yxFKX5R8I",
     "dexgen": "a",
@@ -343,7 +343,7 @@
       "chinese": "皮卡丘",
       "french": "Pikachu"
     },
-    "img": null,
+    "img": "pikachu",
     "game": "RBY",
     "link": "Wg1GmeXf-QQ",
     "dexgen": "a",
@@ -357,7 +357,7 @@
       "chinese": "雷丘",
       "french": "Raichu"
     },
-    "img": null,
+    "img": "fairy",
     "game": "RB",
     "link": "QZHahUe_5pU",
     "dexgen": "a",
@@ -371,7 +371,7 @@
       "chinese": "穿山鼠",
       "french": "Sabelette"
     },
-    "img": null,
+    "img": "biped",
     "game": "BY",
     "link": "O-pKgY7qUjs",
     "dexgen": "a",
@@ -385,7 +385,7 @@
       "chinese": "穿山王",
       "french": "Sablaireau"
     },
-    "img": null,
+    "img": "biped",
     "game": "BY",
     "link": "umDnSZ4mo7o",
     "dexgen": "a",
@@ -399,7 +399,7 @@
       "chinese": "尼多兰",
       "french": "Nidoran♀"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "HBcnwR3tTp0",
     "dexgen": "a",
@@ -413,7 +413,7 @@
       "chinese": "尼多娜",
       "french": "Nidorina"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "ECfDyofhshM",
     "dexgen": "a",
@@ -427,7 +427,7 @@
       "chinese": "尼多后",
       "french": "Nidoqueen"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "csNsIZlFfg4",
     "dexgen": "a",
@@ -441,7 +441,7 @@
       "chinese": "尼多朗",
       "french": "Nidoran♂"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "g2fVGGohS3g",
     "dexgen": "a",
@@ -455,7 +455,7 @@
       "chinese": "尼多力诺",
       "french": "Nidorino"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "ntw9zz2NpNw",
     "dexgen": "a",
@@ -469,7 +469,7 @@
       "chinese": "尼多王",
       "french": "Nidoking"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "1858bGrBWi0",
     "dexgen": "a",
@@ -483,7 +483,7 @@
       "chinese": "皮皮",
       "french": "Mélofée"
     },
-    "img": null,
+    "img": "fairy",
     "game": "RBY",
     "link": "t113GHAMNtE",
     "dexgen": "a",
@@ -497,7 +497,7 @@
       "chinese": "皮可西",
       "french": "Mélodelfe"
     },
-    "img": null,
+    "img": "fairy",
     "game": "RBY",
     "link": "ept8RlnO_yw",
     "dexgen": "a",
@@ -511,7 +511,7 @@
       "chinese": "六尾",
       "french": "Goupix"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "B",
     "link": "mYVGHE8Wxxo",
     "dexgen": "a",
@@ -525,7 +525,7 @@
       "chinese": "九尾",
       "french": "Feunard"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "zmyqbHEnYbg",
     "dexgen": "a",
@@ -539,7 +539,7 @@
       "chinese": "胖丁",
       "french": "Rondoudou"
     },
-    "img": null,
+    "img": "fairy",
     "game": "RBY",
     "link": "txHQx1h53qw",
     "dexgen": "a",
@@ -553,7 +553,7 @@
       "chinese": "胖可丁",
       "french": "Grodoudou"
     },
-    "img": null,
+    "img": "fairy",
     "game": "RBY",
     "link": "wLKwriCveHc",
     "dexgen": "a",
@@ -567,7 +567,7 @@
       "chinese": "超音蝠",
       "french": "Nosferapti"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "cpTyfxY2PCI",
     "dexgen": "a",
@@ -581,7 +581,7 @@
       "chinese": "大嘴蝠",
       "french": "Nosferalto"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "zKDc9OdAris",
     "dexgen": "a",
@@ -595,7 +595,7 @@
       "chinese": "走路草",
       "french": "Mystherbe"
     },
-    "img": null,
+    "img": "plant",
     "game": "RY",
     "link": "9Q9w-wQe11Y",
     "dexgen": "a",
@@ -609,7 +609,7 @@
       "chinese": "臭臭花",
       "french": "Ortide"
     },
-    "img": null,
+    "img": "plant",
     "game": "RY",
     "link": "iDWktbEsMu8",
     "dexgen": "a",
@@ -623,7 +623,7 @@
       "chinese": "霸王花",
       "french": "Rafflesia"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "2o7klD3obVM",
     "dexgen": "a",
@@ -637,7 +637,7 @@
       "chinese": "派拉斯",
       "french": "Paras"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "BnJ4Rfp5rjo",
     "dexgen": "a",
@@ -651,7 +651,7 @@
       "chinese": "派拉斯特",
       "french": "Parasect"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "D9EhKpTvsK4",
     "dexgen": "a",
@@ -665,7 +665,7 @@
       "chinese": "毛球",
       "french": "Mimitoss"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "QHZPmf7wi2c",
     "dexgen": "a",
@@ -679,7 +679,7 @@
       "chinese": "摩鲁蛾",
       "french": "Aéromite"
     },
-    "img": null,
+    "img": "insect",
     "game": "RBY",
     "link": "HlPlD7AWWKc",
     "dexgen": "a",
@@ -693,7 +693,7 @@
       "chinese": "地鼠",
       "french": "Taupiqueur"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "Duf5mbqstl8",
     "dexgen": "a",
@@ -707,7 +707,7 @@
       "chinese": "三地鼠",
       "french": "Triopikeur"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "eolAxGonZaA",
     "dexgen": "a",
@@ -721,7 +721,7 @@
       "chinese": "喵喵",
       "french": "Miaouss"
     },
-    "img": null,
+    "img": "biped",
     "game": "B",
     "link": "VnHD_uR4Tzs",
     "dexgen": "a",
@@ -735,7 +735,7 @@
       "chinese": "猫老大",
       "french": "Persian"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "63lhTCrVtUw",
     "dexgen": "a",
@@ -749,7 +749,7 @@
       "chinese": "可达鸭",
       "french": "Psykokwak"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "XXb7qodP1Hs",
     "dexgen": "a",
@@ -763,7 +763,7 @@
       "chinese": "哥达鸭",
       "french": "Akwakwak"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "8CARAU3gLNM",
     "dexgen": "a",
@@ -777,7 +777,7 @@
       "chinese": "猴怪",
       "french": "Férosinge"
     },
-    "img": null,
+    "img": "biped",
     "game": "RY",
     "link": "qGfd_3GnEu8",
     "dexgen": "a",
@@ -791,7 +791,7 @@
       "chinese": "火暴猴",
       "french": "Colossinge"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "NDRqXJMN038",
     "dexgen": "a",
@@ -805,7 +805,7 @@
       "chinese": "卡蒂狗",
       "french": "Caninos"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RY",
     "link": "Boxzfj6Wkc0",
     "dexgen": "a",
@@ -819,7 +819,7 @@
       "chinese": "风速狗",
       "french": "Arcanin"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "wY7_4OV4p7s",
     "dexgen": "a",
@@ -833,7 +833,7 @@
       "chinese": "蚊香蝌蚪",
       "french": "Ptitard"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "cfDlX4XU_Sk",
     "dexgen": "a",
@@ -847,7 +847,7 @@
       "chinese": "蚊香君",
       "french": "Têtarte"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "qaCsaCeEBRM",
     "dexgen": "a",
@@ -861,7 +861,7 @@
       "chinese": "蚊香泳士",
       "french": "Tartard"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "42u9v_TvtYo",
     "dexgen": "a",
@@ -875,7 +875,7 @@
       "chinese": "凯西",
       "french": "Abra"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "h38l9wuX6CM",
     "dexgen": "a",
@@ -889,7 +889,7 @@
       "chinese": "勇基拉",
       "french": "Kadabra"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "r-14PHneQYA",
     "dexgen": "a",
@@ -903,7 +903,7 @@
       "chinese": "胡地",
       "french": "Alakazam"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "G-otIX0Vry8",
     "dexgen": "a",
@@ -917,7 +917,7 @@
       "chinese": "腕力",
       "french": "Machoc"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "Ffy1d85ptZI",
     "dexgen": "a",
@@ -931,7 +931,7 @@
       "chinese": "豪力",
       "french": "Machopeur"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "WvYTsg--xpw",
     "dexgen": "a",
@@ -945,7 +945,7 @@
       "chinese": "怪力",
       "french": "Mackogneur"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "rWCGct9qhTo",
     "dexgen": "a",
@@ -959,7 +959,7 @@
       "chinese": "喇叭芽",
       "french": "Chétiflor"
     },
-    "img": null,
+    "img": "plant",
     "game": "BY",
     "link": "B8kCGPQDJvE",
     "dexgen": "a",
@@ -973,7 +973,7 @@
       "chinese": "口呆花",
       "french": "Boustiflor"
     },
-    "img": null,
+    "img": "plant",
     "game": "BY",
     "link": "YW2v_qkqNkQ",
     "dexgen": "a",
@@ -987,7 +987,7 @@
       "chinese": "大食花",
       "french": "Empiflor"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "PEJyeKg39gI",
     "dexgen": "a",
@@ -1001,7 +1001,7 @@
       "chinese": "玛瑙水母",
       "french": "Tentacool"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "ARWpXDJXm4g",
     "dexgen": "a",
@@ -1015,7 +1015,7 @@
       "chinese": "毒刺水母",
       "french": "Tentacruel"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "QmRQ0aXHbwo",
     "dexgen": "a",
@@ -1029,7 +1029,7 @@
       "chinese": "小拳石",
       "french": "Racaillou"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "z60vd3mxMcc",
     "dexgen": "a",
@@ -1043,7 +1043,7 @@
       "chinese": "隆隆石",
       "french": "Gravalanch"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "PahBYkLadyU",
     "dexgen": "a",
@@ -1057,7 +1057,7 @@
       "chinese": "隆隆岩",
       "french": "Grolem"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "qLJe_vi_B3s",
     "dexgen": "a",
@@ -1071,7 +1071,7 @@
       "chinese": "小火马",
       "french": "Ponyta"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "h2Cqkb0dYwc",
     "dexgen": "a",
@@ -1085,7 +1085,7 @@
       "chinese": "烈焰马",
       "french": "Galopa"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "oKdeF3Ec__M",
     "dexgen": "a",
@@ -1099,7 +1099,7 @@
       "chinese": "呆呆兽",
       "french": "Ramoloss"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "OOMqjKooldc",
     "dexgen": "a",
@@ -1113,7 +1113,7 @@
       "chinese": "呆壳兽",
       "french": "Flagadoss"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "ObykytrR8Lg",
     "dexgen": "a",
@@ -1127,7 +1127,7 @@
       "chinese": "小磁怪",
       "french": "Magnéti"
     },
-    "img": null,
+    "img": "ball",
     "game": "RBY",
     "link": "NozPYoiKfao",
     "dexgen": "a",
@@ -1141,7 +1141,7 @@
       "chinese": "三合一磁怪",
       "french": "Magnéton"
     },
-    "img": null,
+    "img": "ball",
     "game": "RBY",
     "link": "F88DLu8wcxk",
     "dexgen": "a",
@@ -1155,7 +1155,7 @@
       "chinese": "大葱鸭",
       "french": "Canarticho"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "wZlSRv6Vs7k",
     "dexgen": "a",
@@ -1169,7 +1169,7 @@
       "chinese": "嘟嘟",
       "french": "Doduo"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "Vyh3Ko7g3Bg",
     "dexgen": "a",
@@ -1183,7 +1183,7 @@
       "chinese": "嘟嘟利",
       "french": "Dodrio"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "UqHCSJGSUEA",
     "dexgen": "a",
@@ -1197,7 +1197,7 @@
       "chinese": "小海狮",
       "french": "Otaria"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "xwdKEuLj74E",
     "dexgen": "a",
@@ -1211,7 +1211,7 @@
       "chinese": "白海狮",
       "french": "Lamantine"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "VBWVVGclIVw",
     "dexgen": "a",
@@ -1225,7 +1225,7 @@
       "chinese": "臭泥",
       "french": "Tadmorv"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "0XQylECCgaE",
     "dexgen": "a",
@@ -1239,7 +1239,7 @@
       "chinese": "臭臭泥",
       "french": "Grotadmorv"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "Daqzf0BUob0",
     "dexgen": "a",
@@ -1253,7 +1253,7 @@
       "chinese": "大舌贝",
       "french": "Kokiyas"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "HHYSWyTisBE",
     "dexgen": "a",
@@ -1267,7 +1267,7 @@
       "chinese": "刺甲贝",
       "french": "Crustabri"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "1ZE6UMmCg3I",
     "dexgen": "a",
@@ -1281,7 +1281,7 @@
       "chinese": "鬼斯",
       "french": "Fantominus"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "f_4YmCfydtc",
     "dexgen": "a",
@@ -1295,7 +1295,7 @@
       "chinese": "鬼斯通",
       "french": "Spectrum"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "glounyktg-M",
     "dexgen": "a",
@@ -1309,7 +1309,7 @@
       "chinese": "耿鬼",
       "french": "Ectoplasma"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "K5m_-IrFMuU",
     "dexgen": "a",
@@ -1323,7 +1323,7 @@
       "chinese": "大岩蛇",
       "french": "Onix"
     },
-    "img": null,
+    "img": "snake",
     "game": "RBY",
     "link": "5obn5PrdA3U",
     "dexgen": "a",
@@ -1337,7 +1337,7 @@
       "chinese": "催眠貘",
       "french": "Soporifik"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "0jUmN2TzP4k",
     "dexgen": "a",
@@ -1351,7 +1351,7 @@
       "chinese": "引梦貘人",
       "french": "Hypnomade"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "DfCb0I98wpo",
     "dexgen": "a",
@@ -1365,7 +1365,7 @@
       "chinese": "大钳蟹",
       "french": "Krabby"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "slWYvLYzgME",
     "dexgen": "a",
@@ -1379,7 +1379,7 @@
       "chinese": "巨钳蟹",
       "french": "Krabboss"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "Xukwj_CwBcI",
     "dexgen": "a",
@@ -1393,7 +1393,7 @@
       "chinese": "霹雳电球",
       "french": "Voltorbe"
     },
-    "img": null,
+    "img": "ball",
     "game": "RBY",
     "link": "bCkwnCMsSs8",
     "dexgen": "a",
@@ -1407,7 +1407,7 @@
       "chinese": "顽皮雷弹",
       "french": "Électrode"
     },
-    "img": null,
+    "img": "ball",
     "game": "RBY",
     "link": "gNrfcCe32i4",
     "dexgen": "a",
@@ -1421,7 +1421,7 @@
       "chinese": "蛋蛋",
       "french": "Noeunoeuf"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "lx0EAByk9bY",
     "dexgen": "a",
@@ -1435,7 +1435,7 @@
       "chinese": "椰蛋树",
       "french": "Noadkoko"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "__jhRBw6v5Q",
     "dexgen": "a",
@@ -1449,7 +1449,7 @@
       "chinese": "卡拉卡拉",
       "french": "Osselait"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "sq9KKjSFvbA",
     "dexgen": "a",
@@ -1463,7 +1463,7 @@
       "chinese": "嘎啦嘎啦",
       "french": "Ossatueur"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "udpm8sLh3rU",
     "dexgen": "a",
@@ -1477,7 +1477,7 @@
       "chinese": "飞腿郎",
       "french": "Kicklee"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "1TPj_FUkuh0",
     "dexgen": "a",
@@ -1491,7 +1491,7 @@
       "chinese": "快拳郎",
       "french": "Tygnon"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "7B-rG9k8mhY",
     "dexgen": "a",
@@ -1505,7 +1505,7 @@
       "chinese": "大舌头",
       "french": "Excelangue"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "Ah91WWBzO0U",
     "dexgen": "a",
@@ -1519,7 +1519,7 @@
       "chinese": "瓦斯弹",
       "french": "Smogo"
     },
-    "img": null,
+    "img": "biped",
     "game": "RB",
     "link": "pT90aj4e1TY",
     "dexgen": "a",
@@ -1533,7 +1533,7 @@
       "chinese": "双弹瓦斯",
       "french": "Smogogo"
     },
-    "img": null,
+    "img": "biped",
     "game": "RB",
     "link": "Yhv6-DRBkTg",
     "dexgen": "a",
@@ -1547,7 +1547,7 @@
       "chinese": "独角犀牛",
       "french": "Rhinocorne"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "Co_xIlJ-eVM",
     "dexgen": "a",
@@ -1561,7 +1561,7 @@
       "chinese": "钻角犀兽",
       "french": "Rhinoféros"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "DWfq-9n6rTc",
     "dexgen": "a",
@@ -1575,7 +1575,7 @@
       "chinese": "吉利蛋",
       "french": "Leveinard"
     },
-    "img": null,
+    "img": "fairy",
     "game": "RBY",
     "link": "-leMpNN9DyQ",
     "dexgen": "a",
@@ -1589,7 +1589,7 @@
       "chinese": "蔓藤怪",
       "french": "Saquedeneu"
     },
-    "img": null,
+    "img": "plant",
     "game": "RBY",
     "link": "ALtytE0TnWo",
     "dexgen": "a",
@@ -1603,7 +1603,7 @@
       "chinese": "袋兽",
       "french": "Kangourex"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "5zjt-TiyfFQ",
     "dexgen": "a",
@@ -1617,7 +1617,7 @@
       "chinese": "墨海马",
       "french": "Hypotrempe"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "DqQ1-9LWY_4",
     "dexgen": "a",
@@ -1631,7 +1631,7 @@
       "chinese": "海刺龙",
       "french": "Hypocéan"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "J78PIguP0Wc",
     "dexgen": "a",
@@ -1645,7 +1645,7 @@
       "chinese": "角金鱼",
       "french": "Poissirène"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "-hefyUuRexA",
     "dexgen": "a",
@@ -1659,7 +1659,7 @@
       "chinese": "金鱼王",
       "french": "Poissoroy"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "AR096DaN-DM",
     "dexgen": "a",
@@ -1673,7 +1673,7 @@
       "chinese": "海星星",
       "french": "Stari"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "asK6y6AqrfA",
     "dexgen": "a",
@@ -1687,7 +1687,7 @@
       "chinese": "宝石海星",
       "french": "Staross"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "lcAwYkEopJI",
     "dexgen": "a",
@@ -1701,7 +1701,7 @@
       "chinese": "魔墙人偶",
       "french": "M. Mime"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "UjykyOxJYG8",
     "dexgen": "a",
@@ -1715,7 +1715,7 @@
       "chinese": "飞天螳螂",
       "french": "Insécateur"
     },
-    "img": null,
+    "img": "insect",
     "game": "RY",
     "link": "jz5-mpiIO8U",
     "dexgen": "a",
@@ -1729,7 +1729,7 @@
       "chinese": "迷唇姐",
       "french": "Lippoutou"
     },
-    "img": null,
+    "img": "biped",
     "game": "RB",
     "link": "TGQZSFKadoQ",
     "dexgen": "a",
@@ -1743,7 +1743,7 @@
       "chinese": "电击兽",
       "french": "Élektek"
     },
-    "img": null,
+    "img": "biped",
     "game": "R",
     "link": "La0iqw65c8w",
     "dexgen": "a",
@@ -1757,7 +1757,7 @@
       "chinese": "鸭嘴火兽",
       "french": "Magmar"
     },
-    "img": null,
+    "img": "biped",
     "game": "B",
     "link": "MInv1IqLLLA",
     "dexgen": "a",
@@ -1771,7 +1771,7 @@
       "chinese": "凯罗斯",
       "french": "Scarabrute"
     },
-    "img": null,
+    "img": "insect",
     "game": "BY",
     "link": "SRcwE8imzUI",
     "dexgen": "a",
@@ -1785,7 +1785,7 @@
       "chinese": "肯泰罗",
       "french": "Tauros"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "TDVfguH-tec",
     "dexgen": "a",
@@ -1799,7 +1799,7 @@
       "chinese": "鲤鱼王",
       "french": "Magicarpe"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "CzxbMhbhqz8",
     "dexgen": "a",
@@ -1813,7 +1813,7 @@
       "chinese": "暴鲤龙",
       "french": "Léviator"
     },
-    "img": null,
+    "img": "snake",
     "game": "RBY",
     "link": "OJzHNOJWYkY",
     "dexgen": "a",
@@ -1827,7 +1827,7 @@
       "chinese": "拉普拉斯",
       "french": "Lokhlass"
     },
-    "img": null,
+    "img": "water",
     "game": "RBY",
     "link": "XmFxgaUr8nk",
     "dexgen": "a",
@@ -1841,7 +1841,7 @@
       "chinese": "百变怪",
       "french": "Métamorph"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "s-I-K_a0a_E",
     "dexgen": "a",
@@ -1855,7 +1855,7 @@
       "chinese": "伊布",
       "french": "Évoli"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "yvxMhMdHlAY",
     "dexgen": "a",
@@ -1869,7 +1869,7 @@
       "chinese": "水伊布",
       "french": "Aquali"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "OGalnHG3Vag",
     "dexgen": "a",
@@ -1883,7 +1883,7 @@
       "chinese": "雷伊布",
       "french": "Voltali"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "Ya-I8pdB4M4",
     "dexgen": "a",
@@ -1897,7 +1897,7 @@
       "chinese": "火伊布",
       "french": "Pyroli"
     },
-    "img": null,
+    "img": "quadruped",
     "game": "RBY",
     "link": "lK7NnRuESKI",
     "dexgen": "a",
@@ -1911,7 +1911,7 @@
       "chinese": "多边兽",
       "french": "Porygon"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "O6E-2ciW2Ag",
     "dexgen": "a",
@@ -1925,7 +1925,7 @@
       "chinese": "菊石兽",
       "french": "Amonita"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "6yt1L1BiWaI",
     "dexgen": "a",
@@ -1939,7 +1939,7 @@
       "chinese": "多刺菊石兽",
       "french": "Amonistar"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "E7UCny8i2nE",
     "dexgen": "a",
@@ -1953,7 +1953,7 @@
       "chinese": "化石盔",
       "french": "Kabuto"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "qyaa4AzMaC0",
     "dexgen": "a",
@@ -1967,7 +1967,7 @@
       "chinese": "镰刀盔",
       "french": "Kabutops"
     },
-    "img": null,
+    "img": "fossil",
     "game": "RBY",
     "link": "12_wvWGd5K8",
     "dexgen": "a",
@@ -1981,7 +1981,7 @@
       "chinese": "化石翼龙",
       "french": "Ptéra"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "FlNE8rjXJTU",
     "dexgen": "a",
@@ -1995,7 +1995,7 @@
       "chinese": "卡比兽",
       "french": "Ronflex"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "XHzkp5vEJvs",
     "dexgen": "a",
@@ -2009,7 +2009,7 @@
       "chinese": "急冻鸟",
       "french": "Artikodin"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "3xfL8EPdznA",
     "dexgen": "a",
@@ -2023,7 +2023,7 @@
       "chinese": "闪电鸟",
       "french": "Électhor"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "WxijLmzQcPE",
     "dexgen": "a",
@@ -2037,7 +2037,7 @@
       "chinese": "火焰鸟",
       "french": "Sulfura"
     },
-    "img": null,
+    "img": "bird",
     "game": "RBY",
     "link": "iNWfA4Yh36s",
     "dexgen": "a",
@@ -2051,7 +2051,7 @@
       "chinese": "迷你龙",
       "french": "Minidraco"
     },
-    "img": null,
+    "img": "snake",
     "game": "RBY",
     "link": "gSuQ-PyObpI",
     "dexgen": "a",
@@ -2065,7 +2065,7 @@
       "chinese": "哈克龙",
       "french": "Draco"
     },
-    "img": null,
+    "img": "snake",
     "game": "RBY",
     "link": "C-3zTCuE3nY",
     "dexgen": "a",
@@ -2079,7 +2079,7 @@
       "chinese": "快龙",
       "french": "Dracolosse"
     },
-    "img": null,
+    "img": "snake",
     "game": "RBY",
     "link": "L0pYmsQUt2Y",
     "dexgen": "a",
@@ -2093,7 +2093,7 @@
       "chinese": "超梦",
       "french": "Mewtwo"
     },
-    "img": null,
+    "img": "biped",
     "game": "RBY",
     "link": "kDyo0jTScCo",
     "dexgen": "a",
@@ -2107,8 +2107,7 @@
       "chinese": "梦幻",
       "french": "Mew"
     },
-    "variation": "normal",
-    "img": null,
+    "img": "biped",
     "videos": null
   }
 ]

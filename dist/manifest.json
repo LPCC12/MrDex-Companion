@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Mr. Pokédex Companion",
-  "version": "0.4",
+  "version": "0.5",
   "description": "Video Database for your Catch' em All!",
   "icons": {
-    "16": "assets/icon.png",
-    "48": "assets/icon.png",
-    "128": "assets/icon.png"
+    "16": "assets/img/mdex-default.png",
+    "48": "assets/img/mdex-default.png",
+    "128": "assets/img/mdex-default.png"
   },
   "action": {
-    "default_icon": "assets/icon.png",
+    "default_icon": "assets/img/mdex-default.png",
     "default_title": "Mr. Pokédex Companion",
     "default_popup": "popup/default.html"
   },
@@ -22,7 +22,9 @@
       "resources": [
         "assets/db/g1/main.json",
         "assets/db/g1/appendix.json",
-        "assets/config/cfg.json"
+        "assets/config/cfg.json",
+        "assets/img/mdex-default.png",
+        "assets/img/mdex-yt.png"
       ],
       "matches": ["<all_urls>"]
     }

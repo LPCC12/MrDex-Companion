@@ -1,11 +1,11 @@
 .icon {
   position: fixed;
-  bottom: 100px;
+  bottom: 50px;
   right: 0;
   width: 128px;
   height: 128px;
   z-index: 201;
-  animation: fade-in 0.2s ease-in-out forwards;
+  opacity: 50%;
 }
 
 .overlay {
@@ -15,9 +15,9 @@
   font-family: 'Barlow', sans-serif;
   border-radius: 50px 0 0 50px;
   background: #f38258;
-  padding: 15px;
+  padding: 30px;
   width: 500px;
-  height: 500px;
+  height: 430px;
   z-index: 200;
   opacity: 0;
   animation: fade-in 0.2s ease-in-out forwards;
@@ -28,26 +28,44 @@
   justify-content: center;
   align-items: center;
 }
+
 .ov-header img {
+  margin-right: 10px; /* Adds 10px margin to the right of the image */
+  cursor: pointer;
+}
+
+.pkinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pkinfo img {
+  height: 32px;
+  width: 32px;
   margin-right: 10px; /* Adds 10px margin to the right of the image */
 }
 
-h3 {
-  font-size: 30px;
+.pkinfo p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 5px; /* Adds 10px margin to the right of the image */
 }
 
-p {
-  font-size: 16px;
+h3 {
+  font-size: 25px;
 }
 
 .close_btn {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   background: none;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -64,12 +82,23 @@ p {
   }
 }
 
-.imgM {
-  height: 64px;
-  width: 64px;
+.vContainer {
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  position: relative;
 }
 
-.imgS {
-  height: 32px;
-  width: 32px;
+.vFrame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.imgM {
+  height: 40px;
+  width: 40px;
 }
