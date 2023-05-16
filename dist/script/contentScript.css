@@ -1,9 +1,9 @@
 .icon {
   position: fixed;
   bottom: 50px;
-  right: 0;
+  right: 10px;
   width: 128px;
-  height: 128px;
+  height: 142px;
   z-index: 201;
   opacity: 50%;
 }
@@ -14,7 +14,7 @@
   right: 0;
   font-family: 'Barlow', sans-serif;
   border-radius: 50px 0 0 50px;
-  background: #f38258;
+  background: #ec6737;
   padding: 30px;
   width: 500px;
   height: 430px;
@@ -99,6 +99,33 @@ h3 {
 }
 
 .imgM {
-  height: 40px;
+  height: 44px;
   width: 40px;
+}
+
+.gbRED {
+  filter: invert(11%) sepia(96%) saturate(7478%) hue-rotate(3deg)
+    brightness(96%) contrast(113%) drop-shadow(-1px -1px 0px #000000)
+    drop-shadow(2px -1px 0px #000000) drop-shadow(2px 2px 0px #000000)
+    drop-shadow(-1px 2px 0px #000000);
+
+  margin: 1px;
+}
+
+.gbBLUE {
+  filter: invert(9%) sepia(99%) saturate(7462%) hue-rotate(248deg)
+    brightness(89%) contrast(145%) drop-shadow(-1px -1px 0px #000000)
+    drop-shadow(2px -1px 0px #000000) drop-shadow(2px 2px 0px #000000)
+    drop-shadow(-1px 2px 0px #000000);
+
+  margin: 1px;
+}
+
+.gbYELLOW {
+  filter: invert(94%) sepia(37%) saturate(5696%) hue-rotate(7deg)
+    brightness(110%) contrast(108%) drop-shadow(-1px -1px 0px #000000)
+    drop-shadow(2px -1px 0px #000000) drop-shadow(2px 2px 0px #000000)
+    drop-shadow(-1px 2px 0px #000000);
+
+  margin: 1px;
 }

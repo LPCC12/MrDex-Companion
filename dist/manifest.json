@@ -24,7 +24,19 @@
         "assets/db/g1/appendix.json",
         "assets/config/cfg.json",
         "assets/img/mdex-default.png",
-        "assets/img/mdex-yt.png"
+        "assets/img/mdex-yt.png",
+        "assets/db/g1/img/ball.png",
+        "assets/db/g1/img/biped.png",
+        "assets/db/g1/img/bird.png",
+        "assets/db/g1/img/fairy.png",
+        "assets/db/g1/img/fossil.png",
+        "assets/db/g1/img/insect.png",
+        "assets/db/g1/img/pikachu.png",
+        "assets/db/g1/img/plant.png",
+        "assets/db/g1/img/quadruped.png",
+        "assets/db/g1/img/snake.png",
+        "assets/db/g1/img/water.png",
+        "assets/img/gameboy.svg"
       ],
       "matches": ["<all_urls>"]
     }

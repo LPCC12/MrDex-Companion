@@ -42,12 +42,13 @@ function fetchSerebii(url, gen) {
           overlay(
             npkmn,
             data[npkmn - 1].name.english,
-            gen,
-            data[npkmn - 1].dexgen,
-            data[npkmn - 1].id,
-            data[npkmn - 1].appendix,
+            data[npkmn - 1].img,
             data[npkmn - 1].game,
-            data[npkmn - 1].link
+            data[npkmn - 1].link,
+            data[npkmn - 1].dexgen,
+            data[npkmn - 1].appendix,
+            gen,
+            data[npkmn - 1].id
           );
         }
 
@@ -65,6 +66,7 @@ function fetchSerebii(url, gen) {
     console.log(`⚠️ An error occurred: ${error}`);
   }
 }
+
 function icon() {
   const icon_el = document.createElement('img');
   icon_el.className = 'icon';
@@ -80,12 +82,13 @@ function icon() {
 function overlay(
   numPK,
   engnamePK,
-  gameGEN,
-  dexGEN,
-  natID,
-  dexAPD,
+  imgPK,
   gamesPK,
-  vidID
+  vidID,
+  dexGEN,
+  appendix,
+  pkGEN,
+  natID
 ) {
   //Font usada no overlay
   const l1 = document.createElement('link');
@@ -144,7 +147,7 @@ function overlay(
 
   //PK Icon
   const image = document.createElement('img');
-  image.src = 'https://www.serebii.net/pokedex/icon/plant.png';
+  image.src = chrome.runtime.getURL(`./assets/db/g1/img/${imgPK}.png`);
   PKInfoElement.appendChild(image);
 
   //PK Number
@@ -156,6 +159,39 @@ function overlay(
   const pkNome = document.createElement('p');
   pkNome.innerHTML = `${engnamePK}`;
   PKInfoElement.appendChild(pkNome);
+
+  //PK Games Available
+  var R = 0;
+  var B = 0;
+  var Y = 0;
+
+  if (gamesPK.includes('R')) R = 1;
+  if (gamesPK.includes('B')) B = 1;
+  if (gamesPK.includes('Y')) Y = 1;
+
+  if (R == 1) {
+    const pkRED = document.createElement('img');
+    pkRED.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
+    pkRED.className = 'gbRED';
+
+    PKInfoElement.appendChild(pkRED);
+  }
+
+  if (B == 1) {
+    const pkBLUE = document.createElement('img');
+    pkBLUE.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
+    pkBLUE.className = 'gbBLUE';
+
+    PKInfoElement.appendChild(pkBLUE);
+  }
+
+  if (R == 1) {
+    const pkYLW = document.createElement('img');
+    pkYLW.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
+    pkYLW.className = 'gbYELLOW';
+
+    PKInfoElement.appendChild(pkYLW);
+  }
 
   element.appendChild(PKInfoElement); //Fim PKInfo
 
