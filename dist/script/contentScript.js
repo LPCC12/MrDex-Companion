@@ -185,7 +185,7 @@ function overlay(
     PKInfoElement.appendChild(pkBLUE);
   }
 
-  if (R == 1) {
+  if (Y == 1) {
     const pkYLW = document.createElement('img');
     pkYLW.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
     pkYLW.className = 'gbYELLOW';
@@ -211,5 +211,26 @@ function overlay(
   // add the video container to the page
   element.appendChild(videoContainer);
 
+  // Appendix Description
+  const appendixDesc = document.createElement('p');
+
+  const g1apdxLurl = chrome.runtime.getURL('./assets/db/g1/appendix.json');
+
+  fetch(g1apdxLurl)
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((item) => {
+        if (item.codename === appendix) {
+          const dexgen = item.dexgen;
+          const link = item.link;
+          const description = item.description;
+
+          appendixDesc.innerHTML = description;
+        }
+      });
+    });
+  element.appendChild(appendixDesc);
+
+  // Further processing with the properties...
   document.body.appendChild(element);
 }

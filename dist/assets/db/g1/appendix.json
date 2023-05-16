@@ -1,0 +1,16 @@
+[
+  {
+    "codename": "NEncounter",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Found normally in the wild."
+  },
+  {
+    "codename": "gift",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Pokémon normally obtained via gift."
+  }
+]

@@ -13,7 +13,7 @@ The extension currently supports the following websites:
 - https://www.serebii.net/
 - https://www.bulbapedia.bulbagarden.net/
 
-As of now it only supports Generation 1.
+As of now it only supports Generation 1 (Red, Blue, Yellow).
 
 ## Contributions
 
