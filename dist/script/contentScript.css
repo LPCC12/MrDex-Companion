@@ -53,15 +53,13 @@
   margin-right: 5px; /* Adds 10px margin to the right of the image */
 }
 
-h3 {
-  font-size: 25px;
-}
-p {
+.cenP {
   font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .close_btn {
   position: absolute;
   top: 15px;

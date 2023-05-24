@@ -4,13 +4,104 @@
     "icon": null,
     "link": null,
     "dexgen": null,
-    "description": "Found normally in the wild."
+    "description": "Obtainable in the wild."
   },
   {
     "codename": "gift",
     "icon": null,
     "link": null,
     "dexgen": null,
-    "description": "Pokémon normally obtained via gift."
+    "description": "Received by someone via gift."
+  },
+  {
+    "codename": "evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Obtain this Pokémon evolving it's previous form."
+  },
+  {
+    "codename": "moon_stone_evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Moon Stone is required to evolve this Pokémon."
+  },
+  {
+    "codename": "fire_stone_evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Fire Stone is required to evolve this Pokémon."
+  },
+  {
+    "codename": "leaf_stone_evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Leaf Stone is required to evolve this Pokémon."
+  },
+  {
+    "codename": "water_stone_evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Water Stone is required to evolve this Pokémon."
+  },
+  {
+    "codename": "thunder_stone_evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Thunder Stone is required to evolve this Pokémon."
+  },
+  {
+    "codename": "surf",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Encounter this Pokémon by surfing in the water."
+  },
+  {
+    "codename": "super_rod",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Super Rod is used."
+  },
+  {
+    "codename": "good_rod",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Good Rod is used."
+  },
+  {
+    "codename": "old_rod",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "A Old Rod is used."
+  },
+  {
+    "codename": "trade_evolution",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Evolve by trading with another player."
+  },
+  {
+    "codename": "npc_trade",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Trade with an in-game trainer."
+  },
+  {
+    "codename": "silth_scope",
+    "icon": null,
+    "link": null,
+    "dexgen": null,
+    "description": "Silph Scope is required to identify and catch this Pokémon."
   }
 ]

@@ -135,6 +135,7 @@ function overlay(
 
   //Titulo Header
   const Theader = document.createElement('h3');
+  Theader.style = 'font-size: 25px';
   Theader.innerText = 'Mr. Pokédex';
 
   headerElement.appendChild(Theader);
@@ -152,11 +153,13 @@ function overlay(
 
   //PK Number
   const pkNumber = document.createElement('p');
+  pkNumber.className = 'cenP';
   pkNumber.innerText = `#${natID}`;
   PKInfoElement.appendChild(pkNumber);
 
   //PK Nome
   const pkNome = document.createElement('p');
+  pkNome.className = 'cenP';
   pkNome.innerHTML = `${engnamePK}`;
   PKInfoElement.appendChild(pkNome);
 
@@ -213,7 +216,7 @@ function overlay(
 
   // Appendix Description
   const appendixDesc = document.createElement('p');
-
+  appendixDesc.className = 'cenP';
   const g1apdxLurl = chrome.runtime.getURL('./assets/db/g1/appendix.json');
 
   fetch(g1apdxLurl)
