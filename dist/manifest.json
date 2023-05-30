@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Mr. Pokédex Companion",
-  "version": "0.6",
-  "description": "Video Database for your Catch' em All!",
+  "version": "0.7",
+  "description": "Video Database for your Catch' em All! Seamlessly integrating with compatible webpages, it provides easy access to a vast collection of video guides from the YouTube channel Mr. Pokedex.",
   "icons": {
-    "16": "assets/img/mdex-default.png",
-    "48": "assets/img/mdex-default.png",
-    "128": "assets/img/mdex-default.png"
+    "16": "assets/img/mdex-companion.png",
+    "48": "assets/img/mdex-companion.png",
+    "128": "assets/img/mdex-companion.png"
   },
   "action": {
-    "default_icon": "assets/img/mdex-default.png",
+    "default_icon": "assets/img/mdex-companion.png",
     "default_title": "Mr. Pokédex Companion",
     "default_popup": "popup/default.html"
   },
@@ -20,22 +20,9 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/db/g1/main.json",
-        "assets/db/g1/appendix.json",
         "assets/config/cfg.json",
         "assets/img/mdex-default.png",
-        "assets/img/mdex-yt.png",
-        "assets/db/g1/img/ball.png",
-        "assets/db/g1/img/biped.png",
-        "assets/db/g1/img/bird.png",
-        "assets/db/g1/img/fairy.png",
-        "assets/db/g1/img/fossil.png",
-        "assets/db/g1/img/insect.png",
-        "assets/db/g1/img/pikachu.png",
-        "assets/db/g1/img/plant.png",
-        "assets/db/g1/img/quadruped.png",
-        "assets/db/g1/img/snake.png",
-        "assets/db/g1/img/water.png",
+        "assets/img/mdex-clickme.png",
         "assets/img/gameboy.svg"
       ],
       "matches": ["<all_urls>"]

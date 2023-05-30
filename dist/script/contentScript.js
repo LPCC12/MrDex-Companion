@@ -28,9 +28,7 @@ function fetchSerebii(url, gen) {
     npkmn = url.replace('https://www.serebii.net/pokedex/', '');
     npkmn = npkmn.replace('.shtml', '');
 
-    const g1localurl = chrome.runtime.getURL('./assets/db/g1/main.json');
-
-    fetch(g1localurl)
+    fetch('https://luisccosta12.social/MDexDB/g1/main.json')
       .then((response) => response.json())
       .then((data) => {
         if (!data[npkmn - 1].link) {
@@ -70,7 +68,7 @@ function fetchSerebii(url, gen) {
 function icon() {
   const icon_el = document.createElement('img');
   icon_el.className = 'icon';
-  icon_el.src = chrome.runtime.getURL('./assets/img/mdex-default.png');
+  icon_el.src = chrome.runtime.getURL('./assets/img/mdex-clickme.png');
   document.body.appendChild(icon_el);
 
   icon_el.addEventListener('click', function () {
@@ -123,14 +121,15 @@ function overlay(
   //Header
   const headerElement = document.createElement('div');
   headerElement.className = 'ov-header';
+  headerElement.addEventListener('click', function () {
+    window.open('https://www.youtube.com/@MrPokedex', '_blank');
+  });
 
   //Logo
   const logo = document.createElement('img');
   logo.className = 'imgM';
-  logo.src = chrome.runtime.getURL('./assets/img/mdex-yt.png');
-  logo.addEventListener('click', function () {
-    window.open('https://www.youtube.com/@MrPokedex', '_blank');
-  });
+  logo.src = chrome.runtime.getURL('./assets/img/mdex-default.png');
+
   headerElement.appendChild(logo);
 
   //Titulo Header
@@ -148,7 +147,7 @@ function overlay(
 
   //PK Icon
   const image = document.createElement('img');
-  image.src = chrome.runtime.getURL(`./assets/db/g1/img/${imgPK}.png`);
+  image.src = `https://luisccosta12.social/MDexDB/g1/img/${imgPK}.png`;
   PKInfoElement.appendChild(image);
 
   //PK Number
@@ -214,26 +213,87 @@ function overlay(
   // add the video container to the page
   element.appendChild(videoContainer);
 
-  // Appendix Description
-  const appendixDesc = document.createElement('p');
-  appendixDesc.className = 'cenP';
-  const g1apdxLurl = chrome.runtime.getURL('./assets/db/g1/appendix.json');
+  // Appendix Group
+  const appendixG = document.createElement('div');
+  appendixG.className = 'apd';
 
-  fetch(g1apdxLurl)
-    .then((response) => response.json())
-    .then((data) => {
-      data.forEach((item) => {
-        if (item.codename === appendix) {
-          const dexgen = item.dexgen;
-          const link = item.link;
-          const description = item.description;
+  let dexgen;
+  let link;
+  let icon;
+  let desc;
 
-          appendixDesc.innerHTML = description;
-        }
-      });
+  fetchAPX(appendix)
+    .then((result) => {
+      // Access the values returned by the function
+      dexgen = result.dexgen;
+      link = result.link;
+      icon = result.icon;
+      desc = result.description;
+
+      //Appendix Icon
+      const apxIcon = document.createElement('img');
+      if (!icon)
+        apxIcon.src = `https://luisccosta12.social/MDexDB/icons/null.png`;
+      else apxIcon.src = `https://luisccosta12.social/MDexDB/icons/${icon}.png`;
+      appendixG.appendChild(apxIcon);
+
+      // Appendix Description
+      const apxDesc = document.createElement('p');
+      apxDesc.innerHTML = desc;
+      appendixG.appendChild(apxDesc);
+
+      if (link) {
+        //Appendix Link
+        const apxLink = document.createElement('img');
+        apxLink.src =
+          'https://img.icons8.com/material-outlined/24/link--v1.png';
+        apxLink.className = 'iconAPX';
+        apxLink.addEventListener('click', function () {
+          window.open(`https://youtu.be/${link}`, '_blank');
+        });
+        appendixG.appendChild(apxLink);
+      }
+    })
+    .catch((error) => {
+      console.log(`⚠️ An error occurred: ${error}`);
     });
-  element.appendChild(appendixDesc);
+
+  element.appendChild(appendixG);
 
   // Further processing with the properties...
   document.body.appendChild(element);
+}
+
+function fetchAPX(codename) {
+  return new Promise((resolve, reject) => {
+    fetch('https://luisccosta12.social/MDexDB/g1/appendix.json')
+      .then((response) => response.json())
+      .then((data) => {
+        let foundItem = data.find((item) => item.codename === codename);
+
+        if (foundItem) {
+          let valid = '🛑';
+
+          if (foundItem.description != null) valid = '🟢';
+
+          if (dev) {
+            console.log(
+              `🟣 Appendix: valid(${valid}) | dexgen(${foundItem.dexgen}) | link(${foundItem.link}) | icon(${foundItem.icon})`
+            );
+          }
+
+          resolve({
+            dexgen: foundItem.dexgen,
+            link: foundItem.link,
+            icon: foundItem.icon,
+            description: foundItem.description,
+          });
+        } else {
+          reject(`Item with codename "${codename}" not found.`);
+        }
+      })
+      .catch((error) => {
+        reject(`An error occurred: ${error}`);
+      });
+  });
 }

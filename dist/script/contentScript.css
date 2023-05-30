@@ -1,11 +1,12 @@
 .icon {
   position: fixed;
   bottom: 50px;
-  right: 10px;
-  width: 128px;
-  height: 142px;
+  right: 0;
+  width: 390px;
+  height: 290px;
   z-index: 201;
-  opacity: 50%;
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .overlay {
@@ -14,10 +15,10 @@
   right: 0;
   font-family: 'Barlow', sans-serif;
   border-radius: 50px 0 0 50px;
-  background: #ec6737;
+  background: #5db046;
   padding: 30px;
   width: 500px;
-  height: 530px;
+  height: 460px;
   z-index: 200;
   opacity: 0;
   animation: fade-in 0.2s ease-in-out forwards;
@@ -27,11 +28,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .ov-header img {
   margin-right: 10px; /* Adds 10px margin to the right of the image */
-  cursor: pointer;
 }
 
 .pkinfo {
@@ -53,11 +54,21 @@
   margin-right: 5px; /* Adds 10px margin to the right of the image */
 }
 
-.cenP {
-  font-size: 15px;
+.apd {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.apd p {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.apd img {
+  height: 32px;
+  width: 32px;
+  margin-right: 5px;
 }
 
 .close_btn {
@@ -104,6 +115,13 @@
 .imgM {
   height: 44px;
   width: 40px;
+}
+
+.iconAPX {
+  cursor: pointer;
+  width: 24px !important;
+  height: 24px !important;
+  margin-left: 5px;
 }
 
 .gbRED {
