@@ -1,93 +1,156 @@
 //This Code Triggers when visiting any url with https://www.serebii.net/* or https://bulbapedia.bulbagarden.net/wiki/*
 
-let mon;
+let npkmn = 0;
+let namePKMN = 'NULL';
 let gen = 4456496; //Gen 0 = various generations available. Default value means not defined
 let place;
 let url = location.href;
 let dev;
+let currentDexGen;
 
 chrome.storage.local.get('devmode', function (result) {
   dev = result.devmode;
+  currentDexGen = result.currentDexGen;
 });
 
 if (!url) {
-  console.log('⚠️ Unable to get a url from the current session.');
+  console.log(
+    "⚠️ Unable to get a url from the current session. (I'm in a valid page)"
+  );
 } else if (url.includes('serebii.net')) {
   /* SEREBII BLOCK */
-  if (url == 'https://www.serebii.net/pokedex/') {
-  } else if (url.includes('serebii.net/pokedex/')) {
+  place = 'serebii';
+
+  //GEN 1
+  if (url.includes('serebii.net/pokedex/')) {
     gen = 1;
-    icon();
+    clickme();
+  }
+
+  //GEN 2
+  if (url == 'https://www.serebii.net/pokedex-gs/') {
+  } else if (url.includes('serebii.net/pokedex-gs/')) {
+    gen = 2;
+    //WIP
   }
 }
 
-function fetchSerebii(url, gen) {
-  var npkmn = 0;
+function clickme() {
+  let iclass = 'icon0';
+  let iimg = chrome.runtime.getURL('./assets/img/mdex-clickme.png');
 
-  try {
-    npkmn = url.replace('https://www.serebii.net/pokedex/', '');
-    npkmn = npkmn.replace('.shtml', '');
+  //Diferentes icones consuante a geração.
 
-    fetch('https://luisccosta12.social/MDexDB/g1/main.json')
-      .then((response) => response.json())
-      .then((data) => {
-        if (!data[npkmn - 1].link) {
-          console.log('🛑 This Pokémon did not return a video');
-        } else {
-          console.log(
-            `⚪ Fetched a video: https://youtu.be/${data[npkmn - 1].link}`
-          );
-          overlay(
-            npkmn,
-            data[npkmn - 1].name.english,
-            data[npkmn - 1].img,
-            data[npkmn - 1].game,
-            data[npkmn - 1].link,
-            data[npkmn - 1].dexgen,
-            data[npkmn - 1].appendix,
-            gen,
-            data[npkmn - 1].id
-          );
-        }
-
-        if (dev) {
-          console.log(
-            `🟣 Pokémon:${data[npkmn - 1].name.english} Gen:${gen} ID:${
-              data[npkmn - 1].id
-            } DGen:${data[npkmn - 1].dexgen} Appendix:${
-              data[npkmn - 1].appendix
-            } Games:(${data[npkmn - 1].game})`
-          );
-        }
-      });
-  } catch (error) {
-    console.log(`⚠️ An error occurred: ${error}`);
+  switch (gen) {
+    case 1:
+      iimg = 'https://www.serebii.net/scarletviolet/pokemon/new/053.png';
+      break;
+    default:
+      console.log('🛑 Gen is invalid.');
+      break;
   }
-}
 
-function icon() {
   const icon_el = document.createElement('img');
-  icon_el.className = 'icon';
-  icon_el.src = chrome.runtime.getURL('./assets/img/mdex-clickme.png');
+  icon_el.className = iclass;
+  icon_el.src = iimg;
   document.body.appendChild(icon_el);
 
   icon_el.addEventListener('click', function () {
     icon_el.parentNode.removeChild(icon_el);
-    fetchSerebii(url, gen);
+    switch (place) {
+      case 'serebii':
+        fetchSerebii();
+        break;
+
+      default:
+        console.log('🛑 Just lost the place somewhere along the way.');
+        break;
+    }
   });
 }
 
+function fetchSerebii() {
+  try {
+    npkmn = url.replace('https://www.serebii.net/pokedex/', '');
+    npkmn = npkmn.replace('.shtml', '');
+    if (npkmn == '') npkmn = 0;
+  } catch (error) {
+    console.log(`🛑 ${error}`);
+  }
+
+  if (npkmn == 0 && namePKMN == 'NULL') {
+    //There is no data so i'm assuming im in a pokédex page. Providing Search Overlay
+    console.log(
+      `⚪ I'm in ${place} with no data so i'm providing a search index alternative.`
+    );
+    overlay('s');
+  } else if (npkmn != 0) {
+    console.log(`⚪ Fetching pokémon data from ${place} using pk number.`);
+
+    try {
+      fetch('https://luisccosta12.social/MDexDB/g1/main.json')
+        .then((response) => response.json())
+        .then((data) => {
+          if (!data[npkmn - 1].link) {
+            console.log('🛑 This Pokémon did not return a video');
+            overlay('e');
+          } else {
+            console.log(
+              `⚪ Fetched a video: https://youtu.be/${data[npkmn - 1].link}`
+            );
+            overlay(
+              'v',
+              data[npkmn - 1].name.english,
+              data[npkmn - 1].img,
+              data[npkmn - 1].game,
+              data[npkmn - 1].link,
+              data[npkmn - 1].dexgen,
+              data[npkmn - 1].appendix,
+              data[npkmn - 1].id
+            );
+          }
+
+          if (dev) {
+            console.log(
+              `🟣 Pokémon:${data[npkmn - 1].name.english} Gen:${gen} ID:${
+                data[npkmn - 1].id
+              } DGen:${data[npkmn - 1].dexgen} Appendix:${
+                data[npkmn - 1].appendix
+              } Games:(${data[npkmn - 1].game})`
+            );
+          }
+        });
+    } catch (error) {
+      console.log(`⚠️ An error occurred: ${error}`);
+    }
+  }
+}
+
 function overlay(
-  numPK,
+  mode,
   engnamePK,
   imgPK,
   gamesPK,
   vidID,
   dexGEN,
   appendix,
-  pkGEN,
   natID
 ) {
+  /*
+    Modes
+
+    v - Valid with data
+    s - Search overlay. Probably no data.
+    w - No video yet.
+    e - This Pokémon is unobtainable without cheats or glitches.
+
+  */
+
+  if (mode == 's') {
+    alert('Search to be developed');
+    return;
+  }
+
   //Font usada no overlay
   const l1 = document.createElement('link');
   l1.rel = 'preconnect';
@@ -106,7 +169,27 @@ function overlay(
   document.head.appendChild(l3);
 
   const element = document.createElement('div');
-  element.className = 'overlay';
+  switch (gen) {
+    case 1:
+      element.className = 'overlay1';
+      break;
+
+    default:
+      element.className = 'overlay0';
+      break;
+  }
+
+  //Outdated video info
+  if (dexGEN != currentDexGen) {
+    const outdatedInfo = document.createElement('img');
+    outdatedInfo.src =
+      'https://img.icons8.com/material-rounded/24/FFFFFF/info.png';
+    outdatedInfo.className = 'iconDEXGEN';
+    outdatedInfo.title =
+      'This video is not up to current standards, this means the quality might not be the best or the video is old.';
+
+    element.appendChild(outdatedInfo);
+  }
 
   //Close button
   const closeButton = document.createElement('button');
@@ -114,7 +197,7 @@ function overlay(
   closeButton.innerText = 'X';
   closeButton.onclick = function () {
     element.parentNode.removeChild(element);
-    icon();
+    clickme();
   };
   element.appendChild(closeButton);
 
@@ -175,6 +258,7 @@ function overlay(
     const pkRED = document.createElement('img');
     pkRED.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
     pkRED.className = 'gbRED';
+    pkRED.title = 'Available in Red Version';
 
     PKInfoElement.appendChild(pkRED);
   }
@@ -183,6 +267,7 @@ function overlay(
     const pkBLUE = document.createElement('img');
     pkBLUE.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
     pkBLUE.className = 'gbBLUE';
+    pkBLUE.title = 'Available in Blue Version';
 
     PKInfoElement.appendChild(pkBLUE);
   }
@@ -191,6 +276,7 @@ function overlay(
     const pkYLW = document.createElement('img');
     pkYLW.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
     pkYLW.className = 'gbYELLOW';
+    pkYLW.title = 'Available in Yellow Version';
 
     PKInfoElement.appendChild(pkYLW);
   }
@@ -217,39 +303,40 @@ function overlay(
   const appendixG = document.createElement('div');
   appendixG.className = 'apd';
 
-  let dexgen;
-  let link;
-  let icon;
-  let desc;
+  let adexgen;
+  let alink;
+  let aicon;
+  let adesc;
 
   fetchAPX(appendix)
     .then((result) => {
       // Access the values returned by the function
-      dexgen = result.dexgen;
-      link = result.link;
-      icon = result.icon;
-      desc = result.description;
+      adexgen = result.dexgen;
+      alink = result.link;
+      aicon = result.icon;
+      adesc = result.description;
 
       //Appendix Icon
       const apxIcon = document.createElement('img');
-      if (!icon)
+      if (!aicon)
         apxIcon.src = `https://luisccosta12.social/MDexDB/icons/null.png`;
-      else apxIcon.src = `https://luisccosta12.social/MDexDB/icons/${icon}.png`;
+      else
+        apxIcon.src = `https://luisccosta12.social/MDexDB/icons/${aicon}.png`;
       appendixG.appendChild(apxIcon);
 
       // Appendix Description
       const apxDesc = document.createElement('p');
-      apxDesc.innerHTML = desc;
+      apxDesc.innerHTML = adesc;
       appendixG.appendChild(apxDesc);
 
-      if (link) {
+      if (alink) {
         //Appendix Link
         const apxLink = document.createElement('img');
         apxLink.src =
           'https://img.icons8.com/material-outlined/24/link--v1.png';
         apxLink.className = 'iconAPX';
         apxLink.addEventListener('click', function () {
-          window.open(`https://youtu.be/${link}`, '_blank');
+          window.open(`https://youtu.be/${alink}`, '_blank');
         });
         appendixG.appendChild(apxLink);
       }
@@ -289,7 +376,7 @@ function fetchAPX(codename) {
             description: foundItem.description,
           });
         } else {
-          reject(`Item with codename "${codename}" not found.`);
+          reject(`🛑 Item with codename "${codename}" not found.`);
         }
       })
       .catch((error) => {

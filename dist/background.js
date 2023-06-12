@@ -4,6 +4,7 @@ fetch(cfgLocalUrl)
   .then((response) => response.json())
   .then((data) => {
     chrome.storage.local.set({ devmode: data.dev });
+    chrome.storage.local.set({ currentDexGen: data.currentDexGen });
   });
 
 chrome.storage.local.get('devmode', function (result) {

@@ -1,15 +1,32 @@
-.icon {
+.icon0 {
   position: fixed;
   bottom: 50px;
   right: 0;
-  width: 390px;
-  height: 290px;
+  width: 195px;
+  height: 147px;
   z-index: 201;
-  opacity: 60%;
   cursor: pointer;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
-.overlay {
+.overlay0 {
+  opacity: 100% !important;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 50px 0 0 50px;
+  background: #ffffff;
+  padding: 30px;
+  width: 500px;
+  height: 460px;
+  z-index: 200;
+  opacity: 0;
+  animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.overlay1 {
+  opacity: 100% !important;
   position: fixed;
   bottom: 50px;
   right: 0;
@@ -22,6 +39,20 @@
   z-index: 200;
   opacity: 0;
   animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.overlay1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 0 0 50px;
+  background-image: url(https://www.the-arcade.ie/wp-content/uploads/2015/09/tumblr_n9n93j55ht1rpu2e9o1_r1_500-500x360.gif);
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .ov-header {
@@ -92,7 +123,7 @@
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.6;
   }
 }
 
@@ -124,6 +155,18 @@
   margin-left: 5px;
 }
 
+.iconDEXGEN {
+  cursor: help;
+  width: 32px !important;
+  height: 32px !important;
+
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: none;
+  border: none;
+}
+
 .gbRED {
   filter: invert(11%) sepia(96%) saturate(7478%) hue-rotate(3deg)
     brightness(96%) contrast(113%) drop-shadow(-1px -1px 0px #000000)
@@ -131,6 +174,7 @@
     drop-shadow(-1px 2px 0px #000000);
 
   margin: 1px;
+  cursor: help;
 }
 
 .gbBLUE {
@@ -140,6 +184,7 @@
     drop-shadow(-1px 2px 0px #000000);
 
   margin: 1px;
+  cursor: help;
 }
 
 .gbYELLOW {
@@ -149,4 +194,5 @@
     drop-shadow(-1px 2px 0px #000000);
 
   margin: 1px;
+  cursor: help;
 }
