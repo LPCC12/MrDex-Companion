@@ -73,7 +73,9 @@ function fetchSerebii() {
   try {
     npkmn = url.replace('https://www.serebii.net/pokedex/', '');
     npkmn = npkmn.replace('.shtml', '');
-    if (npkmn == '') npkmn = 0;
+    if (npkmn === '' || isNaN(npkmn)) {
+      npkmn = 0;
+    }
   } catch (error) {
     console.log(`🛑 ${error}`);
   }
@@ -85,7 +87,9 @@ function fetchSerebii() {
     );
     overlay('s');
   } else if (npkmn != 0) {
-    console.log(`⚪ Fetching pokémon data from ${place} using pk number.`);
+    console.log(
+      `🟣 Fetching pokémon data from ${place} using PKMN number ${npkmn}.`
+    );
 
     try {
       fetch('https://luisccosta12.social/MDexDB/g1/main.json')
@@ -333,7 +337,7 @@ function overlay(
         //Appendix Link
         const apxLink = document.createElement('img');
         apxLink.src =
-          'https://img.icons8.com/material-outlined/24/link--v1.png';
+          'https://img.icons8.com/ios-glyphs/30/FFFFFF/external-link.png';
         apxLink.className = 'iconAPX';
         apxLink.addEventListener('click', function () {
           window.open(`https://youtu.be/${alink}`, '_blank');
