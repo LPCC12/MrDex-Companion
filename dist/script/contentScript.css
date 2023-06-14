@@ -16,7 +16,7 @@
   right: 0;
   font-family: 'Barlow', sans-serif;
   border-radius: 50px 0 0 50px;
-  background: #ffffff;
+  background: #000000;
   padding: 30px;
   width: 500px;
   height: 460px;
@@ -66,6 +66,25 @@
   margin-right: 10px; /* Adds 10px margin to the right of the image */
 }
 
+.pkContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.warningIcon {
+  position: absolute;
+  cursor: help;
+  bottom: 2.5px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+}
+
+.warningIcon:hover {
+  opacity: 1;
+}
+
 .pkinfo {
   display: flex;
   justify-content: center;
@@ -99,7 +118,7 @@
 .apd img {
   height: 32px;
   width: 32px;
-  margin-right: 5px;
+  margin: 5px;
 }
 
 .close_btn {
@@ -173,8 +192,7 @@
     drop-shadow(2px -1px 0px #000000) drop-shadow(2px 2px 0px #000000)
     drop-shadow(-1px 2px 0px #000000);
 
-  margin: 1px;
-  cursor: help;
+  margin-left: 2px;
 }
 
 .gbBLUE {
@@ -183,8 +201,7 @@
     drop-shadow(2px -1px 0px #000000) drop-shadow(2px 2px 0px #000000)
     drop-shadow(-1px 2px 0px #000000);
 
-  margin: 1px;
-  cursor: help;
+  margin-left: -7px;
 }
 
 .gbYELLOW {
@@ -193,6 +210,5 @@
     drop-shadow(2px -1px 0px #000000) drop-shadow(2px 2px 0px #000000)
     drop-shadow(-1px 2px 0px #000000);
 
-  margin: 1px;
-  cursor: help;
+  margin-left: -7px;
 }

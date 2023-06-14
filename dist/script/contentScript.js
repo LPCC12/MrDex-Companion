@@ -143,16 +143,36 @@ function overlay(
   /*
     Modes
 
-    v - Valid with data
+    v - Valid with ALL data
     s - Search overlay. Probably no data.
     w - No video yet.
     e - This Pokémon is unobtainable without cheats or glitches.
 
   */
 
+  let ov_PKENGNAME = '???';
+  let ov_PKIMG = null;
+  let ov_PKGAMES = 'null';
+  let ov_vidID = null;
+  let ov_dexGEN = null;
+  let ov_PKAppendix = null;
+  let ov_NatID = 0;
+
   if (mode == 's') {
     alert('Search to be developed');
     return;
+  } else if (mode == 'v') {
+    console.log(
+      "🟣 Creating overlay with mode 'v', assuming that all data received is valid."
+    );
+
+    ov_PKENGNAME = engnamePK;
+    ov_PKIMG = imgPK;
+    ov_PKGAMES = gamesPK;
+    ov_vidID = vidID;
+    ov_dexGEN = dexGEN;
+    ov_PKAppendix = appendix;
+    ov_NatID = natID;
   }
 
   //Font usada no overlay
@@ -173,18 +193,21 @@ function overlay(
   document.head.appendChild(l3);
 
   const element = document.createElement('div');
+
+  //Theme
   switch (gen) {
     case 1:
       element.className = 'overlay1';
       break;
 
+    case 4456496:
     default:
       element.className = 'overlay0';
       break;
   }
 
   //Outdated video info
-  if (dexGEN != currentDexGen) {
+  if (ov_dexGEN != currentDexGen && ov_dexGEN != null) {
     const outdatedInfo = document.createElement('img');
     outdatedInfo.src =
       'https://img.icons8.com/material-rounded/24/FFFFFF/info.png';
@@ -234,55 +257,73 @@ function overlay(
 
   //PK Icon
   const image = document.createElement('img');
-  image.src = `https://luisccosta12.social/MDexDB/g1/img/${imgPK}.png`;
+  if (ov_PKIMG == null)
+    image.src = `https://img.icons8.com/sf-regular-filled/48/FFFFFF/no-camera.png`;
+  else image.src = `https://luisccosta12.social/MDexDB/g1/img/${ov_PKIMG}.png`;
   PKInfoElement.appendChild(image);
 
   //PK Number
   const pkNumber = document.createElement('p');
-  pkNumber.className = 'cenP';
-  pkNumber.innerText = `#${natID}`;
+  pkNumber.innerText = `#${ov_NatID}`;
   PKInfoElement.appendChild(pkNumber);
 
   //PK Nome
   const pkNome = document.createElement('p');
-  pkNome.className = 'cenP';
-  pkNome.innerHTML = `${engnamePK}`;
+  pkNome.innerHTML = `${ov_PKENGNAME}`;
   PKInfoElement.appendChild(pkNome);
 
-  //PK Games Available
-  var R = 0;
-  var B = 0;
-  var Y = 0;
+  if (ov_PKGAMES != 'null') {
+    if (gen == 1) {
+      // PK Games Available
 
-  if (gamesPK.includes('R')) R = 1;
-  if (gamesPK.includes('B')) B = 1;
-  if (gamesPK.includes('Y')) Y = 1;
+      const pkRED = document.createElement('div');
+      pkRED.className = 'pkContainer';
+      const pkREDImage = document.createElement('img');
+      pkREDImage.src = chrome.runtime.getURL('./assets/img/gameboy.svg');
+      pkREDImage.className = 'gbRED';
+      pkRED.appendChild(pkREDImage);
+      if (!ov_PKGAMES.includes('R')) {
+        const warningIcon = document.createElement('img');
+        warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
+        warningIcon.className = 'warningIcon';
+        warningIcon.title =
+          'Unavailable in Red Version, trade with another version.';
+        pkRED.appendChild(warningIcon);
+      }
+      PKInfoElement.appendChild(pkRED);
 
-  if (R == 1) {
-    const pkRED = document.createElement('img');
-    pkRED.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
-    pkRED.className = 'gbRED';
-    pkRED.title = 'Available in Red Version';
+      const pkBLUE = document.createElement('div');
+      pkBLUE.className = 'pkContainer';
+      const pkBLUEImage = document.createElement('img');
+      pkBLUEImage.src = chrome.runtime.getURL('./assets/img/gameboy.svg');
+      pkBLUEImage.className = 'gbBLUE';
+      pkBLUE.appendChild(pkBLUEImage);
+      if (!ov_PKGAMES.includes('B')) {
+        const warningIcon = document.createElement('img');
+        warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
+        warningIcon.className = 'warningIcon';
+        warningIcon.title =
+          'Unavailable in Blue Version, trade with another version.';
+        pkBLUE.appendChild(warningIcon);
+      }
+      PKInfoElement.appendChild(pkBLUE);
 
-    PKInfoElement.appendChild(pkRED);
-  }
-
-  if (B == 1) {
-    const pkBLUE = document.createElement('img');
-    pkBLUE.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
-    pkBLUE.className = 'gbBLUE';
-    pkBLUE.title = 'Available in Blue Version';
-
-    PKInfoElement.appendChild(pkBLUE);
-  }
-
-  if (Y == 1) {
-    const pkYLW = document.createElement('img');
-    pkYLW.src = chrome.runtime.getURL(`./assets/img/gameboy.svg`);
-    pkYLW.className = 'gbYELLOW';
-    pkYLW.title = 'Available in Yellow Version';
-
-    PKInfoElement.appendChild(pkYLW);
+      const pkYLW = document.createElement('div');
+      pkYLW.className = 'pkContainer';
+      const pkYLWImage = document.createElement('img');
+      pkYLWImage.src = chrome.runtime.getURL('./assets/img/gameboy.svg');
+      pkYLWImage.className = 'gbYELLOW';
+      pkYLW.appendChild(pkYLWImage);
+      if (!ov_PKGAMES.includes('Y')) {
+        const warningIcon = document.createElement('img');
+        warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
+        warningIcon.className = 'warningIcon';
+        warningIcon.title =
+          'Unavailable in Yellow Version, trade with another version.';
+        pkYLW.appendChild(warningIcon);
+      }
+      PKInfoElement.appendChild(pkYLW);
+    }
   }
 
   element.appendChild(PKInfoElement); //Fim PKInfo
@@ -291,100 +332,93 @@ function overlay(
   const videoContainer = document.createElement('div');
   videoContainer.className = 'vContainer';
 
-  // create the iframe element for the video
-  const videoFrame = document.createElement('iframe');
-  videoFrame.className = 'vFrame';
-  videoFrame.src = `https://www.youtube.com/embed/${vidID}`;
-  videoFrame.allowFullscreen = true;
+  if (ov_vidID != null) {
+    // create the iframe element for the video
+    const videoFrame = document.createElement('iframe');
+    videoFrame.className = 'vFrame';
+    videoFrame.src = `https://www.youtube.com/embed/${ov_vidID}`;
+    videoFrame.allowFullscreen = true;
 
-  // add the iframe element to the container element
-  videoContainer.appendChild(videoFrame);
+    // add the iframe element to the container element
+    videoContainer.appendChild(videoFrame);
+  } else {
+    const channelFrame = document.createElement('iframe');
+    channelFrame.className = 'vFrame';
+    if (gen == 1) {
+      channelFrame.src =
+        'https://www.youtube.com/embed/playlist?list=PLR0rseVv5Fz4eImUR3ReyMrUxy0wSUQ5j';
+    } else {
+      channelFrame.scr = `https://www.youtube.com/embed/error`;
+    }
+    videoContainer.appendChild(channelFrame);
+  }
 
   // add the video container to the page
   element.appendChild(videoContainer);
 
-  // Appendix Group
+  /*  Appendix Related Code
+      This is not working, needs revamp   */
+
   const appendixG = document.createElement('div');
   appendixG.className = 'apd';
 
-  let adexgen;
-  let alink;
-  let aicon;
-  let adesc;
+  if (ov_PKAppendix != null) {
+    let valid = '🛑';
 
-  fetchAPX(appendix)
-    .then((result) => {
-      // Access the values returned by the function
-      adexgen = result.dexgen;
-      alink = result.link;
-      aicon = result.icon;
-      adesc = result.description;
-
-      //Appendix Icon
-      const apxIcon = document.createElement('img');
-      if (!aicon)
-        apxIcon.src = `https://luisccosta12.social/MDexDB/icons/null.png`;
-      else
-        apxIcon.src = `https://luisccosta12.social/MDexDB/icons/${aicon}.png`;
-      appendixG.appendChild(apxIcon);
-
-      // Appendix Description
-      const apxDesc = document.createElement('p');
-      apxDesc.innerHTML = adesc;
-      appendixG.appendChild(apxDesc);
-
-      if (alink) {
-        //Appendix Link
-        const apxLink = document.createElement('img');
-        apxLink.src =
-          'https://img.icons8.com/ios-glyphs/30/FFFFFF/external-link.png';
-        apxLink.className = 'iconAPX';
-        apxLink.addEventListener('click', function () {
-          window.open(`https://youtu.be/${alink}`, '_blank');
-        });
-        appendixG.appendChild(apxLink);
-      }
-    })
-    .catch((error) => {
-      console.log(`⚠️ An error occurred: ${error}`);
-    });
-
-  element.appendChild(appendixG);
-
-  // Further processing with the properties...
-  document.body.appendChild(element);
-}
-
-function fetchAPX(codename) {
-  return new Promise((resolve, reject) => {
     fetch('https://luisccosta12.social/MDexDB/g1/appendix.json')
       .then((response) => response.json())
       .then((data) => {
-        let foundItem = data.find((item) => item.codename === codename);
+        let foundItems = data.filter((item) =>
+          ov_PKAppendix.includes(item.codename)
+        );
 
-        if (foundItem) {
-          let valid = '🛑';
+        if (foundItems.length > 0) {
+          valid = '🟢';
 
-          if (foundItem.description != null) valid = '🟢';
+          foundItems.forEach((foundItem) => {
+            const { dexgen, link, icon, description } = foundItem;
 
-          if (dev) {
-            console.log(
-              `🟣 Appendix: valid(${valid}) | dexgen(${foundItem.dexgen}) | link(${foundItem.link}) | icon(${foundItem.icon})`
-            );
-          }
+            // Appendix Icon
+            const apxIcon = document.createElement('img');
+            if (!icon)
+              apxIcon.src = `https://luisccosta12.social/MDexDB/icons/null.png`;
+            else
+              apxIcon.src = `https://luisccosta12.social/MDexDB/icons/${icon}.png`;
+            appendixG.appendChild(apxIcon);
 
-          resolve({
-            dexgen: foundItem.dexgen,
-            link: foundItem.link,
-            icon: foundItem.icon,
-            description: foundItem.description,
+            // Appendix Description
+            const apxDesc = document.createElement('p');
+            apxDesc.innerHTML = description;
+            appendixG.appendChild(apxDesc);
+
+            if (link) {
+              //Appendix Link
+              const apxLink = document.createElement('img');
+              apxLink.src =
+                'https://img.icons8.com/ios-glyphs/30/FFFFFF/external-link.png';
+              apxLink.className = 'iconAPX';
+              apxLink.addEventListener('click', function () {
+                window.open(`https://youtu.be/${link}`, '_blank');
+              });
+              appendixG.appendChild(apxLink);
+            }
+
+            if (dev) {
+              console.log(
+                `🟣 Appendix: valid(${valid}) | dexgen(${dexgen}) | link(${link}) | icon(${icon})`
+              );
+            }
           });
         } else {
-          reject(`🛑 Item with codename "${codename}" not found.`);
+          console.log(`🛑 No items with the given codenames found.`);
         }
       })
       .catch((error) => {
-        reject(`An error occurred: ${error}`);
+        console.log(`⚠️ An error occurred: ${error}`);
       });
-  });
+  }
+
+  element.appendChild(appendixG);
+  // Further processing with the properties...
+  document.body.appendChild(element);
 }
