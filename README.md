@@ -18,7 +18,7 @@ Visit the respective section for the extension to trigger seamlessly.
 
 Contributions to this project are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to submit them via the GitHub issues page.
 
-[Buy me a Coffee](paypal.me/LuisCosta627)
+[Buy me a Coffee](https://www.paypal.me/LuisCosta627)
 
 ## Credits
 
