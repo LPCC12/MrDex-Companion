@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mr. Pokédex Companion",
-  "version": "0.10",
+  "version": "0.11",
   "description": "Video Database for your Catch' em All! Seamlessly integrating with compatible webpages, it provides easy access to a vast collection of video guides from the YouTube channel Mr. Pokedex.",
   "icons": {
     "16": "assets/img/mdex-companion.png",
@@ -11,7 +11,7 @@
   "action": {
     "default_icon": "assets/img/mdex-companion.png",
     "default_title": "Mr. Pokédex Companion",
-    "default_popup": "popup/default.html"
+    "default_popup": "popup/popup.html"
   },
   "permissions": ["storage", "alarms", "notifications", "tabs", "activeTab"],
   "background": {

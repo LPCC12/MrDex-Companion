@@ -1,0 +1,39 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  height: 300px;
+  width: 400px;
+  background-color: whitesmoke;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color: #f38258;
+  border: none;
+  margin: -8px;
+  padding: none;
+  cursor: pointer;
+}
+
+.header h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.header img {
+  margin-right: 7px;
+  height: 44px;
+  width: 40px;
+}
+
+.content-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 16px;
+}

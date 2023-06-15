@@ -39,10 +39,11 @@ function clickme() {
   let iclass = 'icon0';
   let iimg = chrome.runtime.getURL('./assets/img/mdex-clickme.png');
 
-  //Diferentes icones consuante a geração.
+  //Diferentes icons dependendo da geração.
 
   switch (gen) {
     case 1:
+      //Set iclass if needed;
       iimg = 'https://www.serebii.net/scarletviolet/pokemon/new/053.png';
       break;
     default:
