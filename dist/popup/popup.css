@@ -34,8 +34,20 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .content-group img {
   margin: none;
+}
+
+.content-element {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-element img {
+  margin: 3px;
 }
 
 p {
