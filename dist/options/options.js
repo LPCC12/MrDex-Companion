@@ -1,21 +1,22 @@
-const timeOption = document.getElementById("time-option");
-timeOption.addEventListener("change", (event) => {
-  const val = event.target.value;
-  if (val < 1 || val > 60) {
-    timeOption.value = 25;
-    val = 25;
-  }
+var manifestData = chrome.runtime.getManifest();
+
+const versionEl = document.getElementById('versionEl');
+versionEl.innerText = `v${manifestData.version}`;
+
+//Logo
+const logoEl = document.getElementById('pop-logo');
+logoEl.src = chrome.runtime.getURL('./assets/img/mdex-companion.png');
+logoEl.addEventListener('click', function () {
+  window.open('https://www.youtube.com/@MrPokedex', '_blank');
 });
 
-const saveBtn = document.getElementById("save-btn");
-saveBtn.addEventListener("click", () => {
-  chrome.storage.local.set({
+const saveBtn = document.getElementById('save-btn');
+saveBtn.addEventListener('click', () => {
+  /*chrome.storage.local.set({
     timer: 0,
     isRunning: false,
     timeOption: timeOption.value,
-  });
-});
+  });*/
 
-chrome.storage.local.get(["timeOption"], (res) => {
-  timeOption.value = res.timeOption;
+  alert('Changes have been saved with success.');
 });

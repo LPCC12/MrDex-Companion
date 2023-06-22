@@ -6,9 +6,9 @@ Mr. Pokédex Companion is a Chrome and Firefox extension that retrieves and disp
 
 The extension currently supports the following websites:
 
-[Serebii.net](https://www.serebii.net/) with following Games:
+Serebii.net with following Games:
 
-- Generation 1 (Red, Blue, Yellow)
+- [Generation 1 (Red, Blue, Yellow)](https://www.serebii.net/pokedex/)
 
 Visit the respective section for the extension to trigger seamlessly.
 

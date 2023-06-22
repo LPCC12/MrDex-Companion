@@ -261,10 +261,14 @@ function overlay(
   image.className = 'pk-icon';
   if (ov_PKIMG == null)
     image.src = `https://img.icons8.com/sf-regular-filled/48/FFFFFF/no-camera.png`;
-  else image.src = `https://luisccosta12.social/MDexDB/g1/img/${ov_PKIMG}.png`;
+  else {
+    if (gen == 1) {
+      image.src = `https://luisccosta12.social/MDexDB/g1/img/${ov_PKIMG}.png`;
+    }
+  }
   PKInfoElement.appendChild(image);
 
-  //PK Number
+  //PK National ID
   const pkNumber = document.createElement('p');
   pkNumber.innerText = `#${ov_NatID}`;
   PKInfoElement.appendChild(pkNumber);
@@ -276,67 +280,74 @@ function overlay(
 
   if (ov_PKGAMES != 'null') {
     if (gen == 1) {
-      // PK Games Available
-
-      const originMarkContainer = document.createElement('div');
-      originMarkContainer.className = 'om-container';
+      let gbWrapper = document.createElement('div');
+      gbWrapper.className = 'gb-wrapper';
 
       const pkREDImage = document.createElement('img');
       pkREDImage.src =
         'https://luisccosta12.social/MDexDB/origin-mark/GB-R.png';
       pkREDImage.className = 'gb-om';
 
-      originMarkContainer.appendChild(pkREDImage);
+      gbWrapper.appendChild(pkREDImage);
 
       if (!ov_PKGAMES.includes('R')) {
         const warningIcon = document.createElement('img');
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
+        //Might need change
         warningIcon.title =
           'Unavailable in Red Version, trade with another version.';
         pkREDImage.style = 'opacity: 40%';
-        originMarkContainer.appendChild(warningIcon);
+        gbWrapper.appendChild(warningIcon);
       }
 
-      PKInfoElement.appendChild(originMarkContainer);
+      PKInfoElement.appendChild(gbWrapper); //End Red Version
 
-      const pkBLUEImage = document.createElement('img');
-      pkBLUEImage.src =
+      gbWrapper = document.createElement('div');
+      gbWrapper.className = 'gb-wrapper';
+
+      const pkBlueImage = document.createElement('img');
+      pkBlueImage.src =
         'https://luisccosta12.social/MDexDB/origin-mark/GB-B.png';
-      pkBLUEImage.className = 'gb-om';
+      pkBlueImage.className = 'gb-om';
 
-      originMarkContainer.appendChild(pkBLUEImage);
+      gbWrapper.appendChild(pkBlueImage);
 
       if (!ov_PKGAMES.includes('B')) {
         const warningIcon = document.createElement('img');
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
+        //Might need change
         warningIcon.title =
           'Unavailable in Blue Version, trade with another version.';
-        pkBLUEImage.style = 'opacity: 40%';
-        originMarkContainer.appendChild(warningIcon);
+        pkBlueImage.style = 'opacity: 40%';
+        gbWrapper.appendChild(warningIcon);
       }
 
-      PKInfoElement.appendChild(originMarkContainer);
+      PKInfoElement.appendChild(gbWrapper); //End Blue Version
 
-      const pkYLWImage = document.createElement('img');
-      pkYLWImage.src =
+      gbWrapper = document.createElement('div');
+      gbWrapper.className = 'gb-wrapper';
+
+      const pkYellowImage = document.createElement('img');
+      pkYellowImage.src =
         'https://luisccosta12.social/MDexDB/origin-mark/GB-Y.png';
-      pkYLWImage.className = 'gb-om';
+      pkYellowImage.className = 'gb-om';
 
-      originMarkContainer.appendChild(pkYLWImage);
+      gbWrapper.appendChild(pkYellowImage);
 
       if (!ov_PKGAMES.includes('Y')) {
         const warningIcon = document.createElement('img');
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
+        //Might need change
         warningIcon.title =
           'Unavailable in Yellow Version, trade with another version.';
-        pkYLWImage.style = 'opacity: 40%';
-        originMarkContainer.appendChild(warningIcon);
+        pkYellowImage.style = 'opacity: 40%';
+        gbWrapper.appendChild(warningIcon);
       }
 
-      PKInfoElement.appendChild(originMarkContainer);
+      PKInfoElement.appendChild(gbWrapper); //End Blue Version
     }
   }
 
@@ -430,6 +441,11 @@ function overlay(
       .catch((error) => {
         console.log(`⚠️ An error occurred: ${error}`);
       });
+  } else {
+    const apxDesc = document.createElement('p');
+    apxDesc.innerHTML =
+      'Oops! I was unable to get a video, might be unreleased or unavailable. Navigate the playlist in the video embed for manual search.';
+    appendixG.appendChild(apxDesc);
   }
 
   element.appendChild(appendixG);
