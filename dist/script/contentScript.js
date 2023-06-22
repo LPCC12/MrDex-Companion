@@ -258,6 +258,7 @@ function overlay(
 
   //PK Icon
   const image = document.createElement('img');
+  image.className = 'pk-icon';
   if (ov_PKIMG == null)
     image.src = `https://img.icons8.com/sf-regular-filled/48/FFFFFF/no-camera.png`;
   else image.src = `https://luisccosta12.social/MDexDB/g1/img/${ov_PKIMG}.png`;
@@ -277,53 +278,65 @@ function overlay(
     if (gen == 1) {
       // PK Games Available
 
-      const pkRED = document.createElement('div');
-      pkRED.className = 'pkContainer';
+      const originMarkContainer = document.createElement('div');
+      originMarkContainer.className = 'om-container';
+
       const pkREDImage = document.createElement('img');
-      pkREDImage.src = chrome.runtime.getURL('./assets/img/gameboy.svg');
-      pkREDImage.className = 'gbRED';
-      pkRED.appendChild(pkREDImage);
+      pkREDImage.src =
+        'https://luisccosta12.social/MDexDB/origin-mark/GB-R.png';
+      pkREDImage.className = 'gb-om';
+
+      originMarkContainer.appendChild(pkREDImage);
+
       if (!ov_PKGAMES.includes('R')) {
         const warningIcon = document.createElement('img');
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
         warningIcon.title =
           'Unavailable in Red Version, trade with another version.';
-        pkRED.appendChild(warningIcon);
+        pkREDImage.style = 'opacity: 40%';
+        originMarkContainer.appendChild(warningIcon);
       }
-      PKInfoElement.appendChild(pkRED);
 
-      const pkBLUE = document.createElement('div');
-      pkBLUE.className = 'pkContainer';
+      PKInfoElement.appendChild(originMarkContainer);
+
       const pkBLUEImage = document.createElement('img');
-      pkBLUEImage.src = chrome.runtime.getURL('./assets/img/gameboy.svg');
-      pkBLUEImage.className = 'gbBLUE';
-      pkBLUE.appendChild(pkBLUEImage);
+      pkBLUEImage.src =
+        'https://luisccosta12.social/MDexDB/origin-mark/GB-B.png';
+      pkBLUEImage.className = 'gb-om';
+
+      originMarkContainer.appendChild(pkBLUEImage);
+
       if (!ov_PKGAMES.includes('B')) {
         const warningIcon = document.createElement('img');
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
         warningIcon.title =
           'Unavailable in Blue Version, trade with another version.';
-        pkBLUE.appendChild(warningIcon);
+        pkBLUEImage.style = 'opacity: 40%';
+        originMarkContainer.appendChild(warningIcon);
       }
-      PKInfoElement.appendChild(pkBLUE);
 
-      const pkYLW = document.createElement('div');
-      pkYLW.className = 'pkContainer';
+      PKInfoElement.appendChild(originMarkContainer);
+
       const pkYLWImage = document.createElement('img');
-      pkYLWImage.src = chrome.runtime.getURL('./assets/img/gameboy.svg');
-      pkYLWImage.className = 'gbYELLOW';
-      pkYLW.appendChild(pkYLWImage);
+      pkYLWImage.src =
+        'https://luisccosta12.social/MDexDB/origin-mark/GB-Y.png';
+      pkYLWImage.className = 'gb-om';
+
+      originMarkContainer.appendChild(pkYLWImage);
+
       if (!ov_PKGAMES.includes('Y')) {
         const warningIcon = document.createElement('img');
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
         warningIcon.title =
           'Unavailable in Yellow Version, trade with another version.';
-        pkYLW.appendChild(warningIcon);
+        pkYLWImage.style = 'opacity: 40%';
+        originMarkContainer.appendChild(warningIcon);
       }
-      PKInfoElement.appendChild(pkYLW);
+
+      PKInfoElement.appendChild(originMarkContainer);
     }
   }
 
