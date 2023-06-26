@@ -9,6 +9,17 @@
   animation: fade-in 1s ease-in-out forwards;
 }
 
+.icon1 {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  width: 164px;
+  height: 164px;
+  z-index: 201;
+  cursor: pointer;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
 .overlay0 {
   opacity: 100% !important;
   position: fixed;

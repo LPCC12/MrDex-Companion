@@ -11,7 +11,7 @@ chrome.storage.local.get('devmode', function (result) {
   if (result.devmode == 1) {
     // Do something if devmode is truthy (e.g. enabled)
     console.log(
-      '🟡 Developer mode is active, some extra functionality might be available.'
+      '🟣 Developer mode is active, some extra functionality might be available.'
     );
   }
 });

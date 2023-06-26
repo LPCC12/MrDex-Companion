@@ -1,5 +1,3 @@
-//This Code Triggers when visiting any url with https://www.serebii.net/* or https://bulbapedia.bulbagarden.net/wiki/*
-
 let npkmn = 0;
 let namePKMN = 'NULL';
 let gen = 4456496; //Gen 0 = various generations available. Default value means not defined
@@ -14,9 +12,7 @@ chrome.storage.local.get('devmode', function (result) {
 });
 
 if (!url) {
-  console.log(
-    "⚠️ Unable to get a url from the current session. (I'm in a valid page)"
-  );
+  console.log('🟡 Unable to get a url from the current session.');
 } else if (url.includes('serebii.net')) {
   /* SEREBII BLOCK */
   place = 'serebii';
@@ -28,26 +24,25 @@ if (!url) {
   }
 
   //GEN 2
-  if (url == 'https://www.serebii.net/pokedex-gs/') {
-  } else if (url.includes('serebii.net/pokedex-gs/')) {
+  if (url.includes('serebii.net/pokedex-gs/')) {
     gen = 2;
-    //WIP
+    //clickme();
   }
 }
 
 function clickme() {
   let iclass = 'icon0';
-  let iimg = chrome.runtime.getURL('./assets/img/mdex-clickme.png');
+  let iimg = chrome.runtime.getURL('./assets/img/rotomdex-wide.png');
 
   //Diferentes icons dependendo da geração.
 
   switch (gen) {
     case 1:
-      //Set iclass if needed;
-      iimg = 'https://www.serebii.net/scarletviolet/pokemon/new/053.png';
+      iclass = 'icon1';
+      iimg = chrome.runtime.getURL('./assets/img/click1.png');
       break;
     default:
-      console.log('🛑 Gen is invalid.');
+      console.warn('🔴 Generation is invalid.');
       break;
   }
 
@@ -64,7 +59,7 @@ function clickme() {
         break;
 
       default:
-        console.log('🛑 Just lost the place somewhere along the way.');
+        console.warn('🔴 Place is invalid.');
         break;
     }
   });
@@ -78,26 +73,31 @@ function fetchSerebii() {
       npkmn = 0;
     }
   } catch (error) {
-    console.log(`🛑 ${error}`);
+    console.warn(`🔴 ${error}`);
   }
 
   if (npkmn == 0 && namePKMN == 'NULL') {
     //There is no data so i'm assuming im in a pokédex page. Providing Search Overlay
     console.log(
-      `⚪ I'm in ${place} with no data so i'm providing a search index alternative.`
+      `⚪ (${place}) No pk data available. Providing search overlay.`
     );
     overlay('s');
   } else if (npkmn != 0) {
-    console.log(
-      `🟣 Fetching pokémon data from ${place} using PKMN number ${npkmn}.`
-    );
+    if (dev) {
+      console.log(`🟣 (${place}) Fetching data using number ${npkmn}.`);
+    }
 
     try {
       fetch('https://luisccosta12.social/MDexDB/g1/main.json')
         .then((response) => response.json())
         .then((data) => {
           if (!data[npkmn - 1].link) {
-            console.log('🛑 This Pokémon did not return a video');
+            console.log(
+              "⚪ This Pokémon did not return a video, assuming it's not yet available"
+            );
+            overlay('w');
+          } else if (data[npkmn - 1].link == 'unobtainable') {
+            console.log('⚪ This Pokémon does not have a video.');
             overlay('e');
           } else {
             console.log(
@@ -126,7 +126,7 @@ function fetchSerebii() {
           }
         });
     } catch (error) {
-      console.log(`⚠️ An error occurred: ${error}`);
+      console.log(`🟡 An error occurred: ${error}`);
     }
   }
 }
@@ -163,10 +163,6 @@ function overlay(
     alert('Search to be developed');
     return;
   } else if (mode == 'v') {
-    console.log(
-      "🟣 Creating overlay with mode 'v', assuming that all data received is valid."
-    );
-
     ov_PKENGNAME = engnamePK;
     ov_PKIMG = imgPK;
     ov_PKGAMES = gamesPK;
@@ -174,6 +170,14 @@ function overlay(
     ov_dexGEN = dexGEN;
     ov_PKAppendix = appendix;
     ov_NatID = natID;
+
+    console.log('⚪ Data fetched. Creating overlay with all data.');
+  } else if (mode == 'e') {
+    alert('Unobtainable to be developed');
+    return clickme();
+  } else if (mode == 'w') {
+    alert('WIP to be developed');
+    return clickme();
   }
 
   //Font usada no overlay
@@ -435,11 +439,11 @@ function overlay(
             }
           });
         } else {
-          console.log(`🛑 No items with the given codenames found.`);
+          console.warn(`🔴 No items with the given codenames found.`);
         }
       })
       .catch((error) => {
-        console.log(`⚠️ An error occurred: ${error}`);
+        console.log(`🟡 An error occurred: ${error}`);
       });
   } else {
     const apxDesc = document.createElement('p');
@@ -449,6 +453,5 @@ function overlay(
   }
 
   element.appendChild(appendixG);
-  // Further processing with the properties...
   document.body.appendChild(element);
 }
