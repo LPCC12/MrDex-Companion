@@ -371,7 +371,7 @@ function overlay(
     // add the iframe element to the container element
     videoContainer.appendChild(videoFrame);
   } else {
-    const channelFrame = document.createElement('iframe');
+    const channelFrame = document.createElement('video');
     channelFrame.className = 'vFrame';
     if (gen == 1) {
       channelFrame.src =
