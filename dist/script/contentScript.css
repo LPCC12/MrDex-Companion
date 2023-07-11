@@ -13,8 +13,8 @@
   position: fixed;
   bottom: 50px;
   right: 0;
-  height: 210px;
-  width: 163px;
+  height: 220px;
+  width: 181px;
   z-index: 201;
   cursor: pointer;
   animation: fade-in 1s ease-in-out forwards;
