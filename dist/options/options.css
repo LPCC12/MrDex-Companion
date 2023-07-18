@@ -25,7 +25,13 @@ body {
 
 p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
+  margin: 5px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 300;
   margin: 5px;
 }
 

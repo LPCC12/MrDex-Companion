@@ -11,13 +11,22 @@
 
 .icon1 {
   position: fixed;
-  bottom: 50px;
+  bottom: 65px;
   right: 0;
   height: 220px;
   width: 181px;
   z-index: 201;
   cursor: pointer;
   animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
 }
 
 .overlay0 {
@@ -157,15 +166,6 @@
 
 .close_btn:hover {
   color: #000;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.6;
-  }
 }
 
 .vContainer {

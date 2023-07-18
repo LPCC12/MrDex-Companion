@@ -3,8 +3,14 @@ let namePKMN = 'NULL';
 let gen = 4456496; //Gen 0 = various generations available. Default value means not defined
 let place;
 let url = location.href;
+
+//Setting's Imported
+
 let dev;
 let currentDexGen;
+
+let set_autoplay;
+let set_mute;
 
 chrome.storage.local.get('devmode', function (result) {
   dev = result.devmode;
@@ -160,7 +166,8 @@ function overlay(
   let ov_NatID = 0;
 
   if (mode == 's') {
-    alert('Search to be developed');
+    alert('A Search Function is to be developed, stay tuned!');
+    window.location.href = 'https://www.serebii.net/pokedex/001.shtml';
     return;
   } else if (mode == 'v') {
     ov_PKENGNAME = engnamePK;
@@ -173,7 +180,9 @@ function overlay(
 
     console.log('⚪ Data fetched. Creating overlay with all data.');
   } else if (mode == 'e') {
-    alert('Unobtainable to be developed');
+    alert(
+      'This Pokémon is unobtainable without cheats or glitches. A video is unavailable.'
+    );
     return clickme();
   } else if (mode == 'w') {
     alert('WIP to be developed');
@@ -291,6 +300,7 @@ function overlay(
       pkREDImage.src =
         'https://luisccosta12.social/MDexDB/origin-mark/GB-R.png';
       pkREDImage.className = 'gb-om';
+      gbWrapper.title = '🟢 Available in Red Version.';
 
       gbWrapper.appendChild(pkREDImage);
 
@@ -299,8 +309,8 @@ function overlay(
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
         //Might need change
-        warningIcon.title =
-          'Unavailable in Red Version, trade with another version.';
+        gbWrapper.title =
+          '🔴 Unavailable in Red Version, trade with another version.';
         pkREDImage.style = 'opacity: 40%';
         gbWrapper.appendChild(warningIcon);
       }
@@ -314,6 +324,7 @@ function overlay(
       pkBlueImage.src =
         'https://luisccosta12.social/MDexDB/origin-mark/GB-B.png';
       pkBlueImage.className = 'gb-om';
+      gbWrapper.title = '🟢 Available in Blue Version.';
 
       gbWrapper.appendChild(pkBlueImage);
 
@@ -322,8 +333,8 @@ function overlay(
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
         //Might need change
-        warningIcon.title =
-          'Unavailable in Blue Version, trade with another version.';
+        gbWrapper.title =
+          '🔴 Unavailable in Blue Version, trade with another version.';
         pkBlueImage.style = 'opacity: 40%';
         gbWrapper.appendChild(warningIcon);
       }
@@ -337,6 +348,7 @@ function overlay(
       pkYellowImage.src =
         'https://luisccosta12.social/MDexDB/origin-mark/GB-Y.png';
       pkYellowImage.className = 'gb-om';
+      gbWrapper.title = '🟢 Available in Yellow Version.';
 
       gbWrapper.appendChild(pkYellowImage);
 
@@ -345,8 +357,8 @@ function overlay(
         warningIcon.src = 'https://img.icons8.com/fluency/48/close-window.png';
         warningIcon.className = 'warningIcon';
         //Might need change
-        warningIcon.title =
-          'Unavailable in Yellow Version, trade with another version.';
+        gbWrapper.title =
+          '🔴 Unavailable in Yellow Version, trade with another version.';
         pkYellowImage.style = 'opacity: 40%';
         gbWrapper.appendChild(warningIcon);
       }
@@ -365,14 +377,15 @@ function overlay(
     // create the iframe element for the video
     const videoFrame = document.createElement('iframe');
     videoFrame.className = 'vFrame';
-    videoFrame.src = `https://www.youtube.com/embed/${ov_vidID}`;
+    videoFrame.src = `https://www.youtube.com/embed/${ov_vidID}?mute=${set_mute}&autoplay=${set_autoplay}`;
     videoFrame.allowFullscreen = true;
 
     // add the iframe element to the container element
     videoContainer.appendChild(videoFrame);
   } else {
-    const channelFrame = document.createElement('video');
+    const channelFrame = document.createElement('iframe');
     channelFrame.className = 'vFrame';
+
     if (gen == 1) {
       channelFrame.src =
         'https://www.youtube.com/embed/playlist?list=PLR0rseVv5Fz4eImUR3ReyMrUxy0wSUQ5j';
