@@ -398,8 +398,7 @@ function overlay(
   // add the video container to the page
   element.appendChild(videoContainer);
 
-  /*  Appendix Related Code
-      This is not working, needs revamp   */
+  /*  Appendix Related Code   */
 
   const appendixG = document.createElement('div');
   appendixG.className = 'apd';

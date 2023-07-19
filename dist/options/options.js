@@ -13,9 +13,7 @@ logoEl.addEventListener('click', function () {
 const saveBtn = document.getElementById('save-btn');
 saveBtn.addEventListener('click', () => {
   /*chrome.storage.local.set({
-    timer: 0,
-    isRunning: false,
-    timeOption: timeOption.value,
+       isRunning: false,
   });*/
 
   alert('Changes have been saved with success.');
