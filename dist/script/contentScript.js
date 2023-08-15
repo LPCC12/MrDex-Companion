@@ -9,13 +9,22 @@ let url = location.href;
 let dev;
 let currentDexGen;
 
-let set_autoplay;
-let set_mute;
+let set_autoplay = 1; //Default Values
+let set_mute = 0;
 
-chrome.storage.local.get('devmode', function (result) {
-  dev = result.devmode;
-  currentDexGen = result.currentDexGen;
-});
+chrome.storage.local.get(
+  ['autoplaySetting', 'muteSetting', 'devmode', 'currentDexGen'],
+  function (result) {
+    set_autoplay =
+      result.autoplaySetting !== undefined ? result.autoplaySetting : 1;
+    set_mute = result.muteSetting !== undefined ? result.muteSetting : 0;
+
+    dev = result.devmode;
+    currentDexGen = result.currentDexGen;
+  }
+);
+
+chrome.storage.local.get('devmode', function (result) {});
 
 if (!url) {
   console.log('🟡 Unable to get a url from the current session.');
