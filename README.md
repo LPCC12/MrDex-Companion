@@ -4,7 +4,7 @@ Mr. Pokédex Companion is a Chrome and Firefox extension that retrieves and disp
 
 ## Installation (Release Version)
 
-![Download-Chrome](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png)
+[![Download-Chrome](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png)](https://chrome.google.com/webstore/detail/mr-pok%C3%A9dex-companion/mbakfmhcjhikleldnhceciheodbhccji)
 
 **Firefox Add-On Available Soon**
 
@@ -13,9 +13,9 @@ Mr. Pokédex Companion is a Chrome and Firefox extension that retrieves and disp
 You can test and use the upcoming version of the extension cloning this repository an manually install unpacked.
 Please note that different chromium based browsers might change how these steps work.
 
-    1. Clone the repository and unzip it.
-    2. Open "chrome://extensions/" in the browser and turn on the "Developer mode" (Top Right Corner).
-    3. Click "Load unpacked" and select the "dist" directory from the extension.
+1. Clone the repository and unzip it.
+2. Open "chrome://extensions/" in the browser and turn on the "Developer mode" (Top Right Corner).
+3. Click "Load unpacked" and select the "dist" directory from the extension.
 
 ## Currently Compatible Websites
 
