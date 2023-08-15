@@ -2,6 +2,21 @@
 
 Mr. Pokédex Companion is a Chrome and Firefox extension that retrieves and displays videos from the YouTube channel [Mr. Pokédex](https://www.youtube.com/@MrPokedex) and displays a popup in the compatible pages. Complete the pokédex even more easily with video format guides.
 
+## Installation (Release Version)
+
+![Download-Chrome](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png)
+
+**Firefox Add-On Available Soon**
+
+### Installation (Beta / In-Development Versions)
+
+You can test and use the upcoming version of the extension cloning this repository an manually install unpacked.
+Please note that different chromium based browsers might change how these steps work.
+
+    1. Clone the repository and unzip it.
+    2. Open "chrome://extensions/" in the browser and turn on the "Developer mode" (Top Right Corner).
+    3. Click "Load unpacked" and select the "dist" directory from the extension.
+
 ## Currently Compatible Websites
 
 The extension currently supports the following websites:
