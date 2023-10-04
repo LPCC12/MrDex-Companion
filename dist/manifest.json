@@ -21,6 +21,7 @@
     {
       "resources": [
         "assets/config/cfg.json",
+        "assets/img/bg/route1-color-y.jpg",
         "assets/img/mdex-default.png",
         "assets/img/gameboy.svg",
         "assets/img/rotomdex-wide.png",

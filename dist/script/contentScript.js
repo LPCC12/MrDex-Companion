@@ -24,8 +24,6 @@ chrome.storage.local.get(
   }
 );
 
-chrome.storage.local.get('devmode', function (result) {});
-
 if (!url) {
   console.log('🟡 Unable to get a url from the current session.');
 } else if (url.includes('serebii.net')) {
@@ -216,16 +214,29 @@ function overlay(
   document.head.appendChild(l3);
 
   const element = document.createElement('div');
+  element.className = 'overlay';
 
   //Theme
   switch (gen) {
     case 1:
-      element.className = 'overlay1';
+      var bg1 = chrome.runtime.getURL('./assets/img/bg/route1-color-y.jpg');
+      element.style.backgroundColor = '#589447';
+
+      const bg = document.createElement('div');
+      bg.className = 'background-image';
+      element.appendChild(bg);
+
+      const img = document.createElement('img');
+      img.src = bg1;
+      img.className = 'background-image'; // Apply a class for styling
+
+      element.appendChild(img);
       break;
 
     case 4456496:
     default:
-      element.className = 'overlay0';
+      //default things
+      element.style.backgroundSize = 'cover';
       break;
   }
 

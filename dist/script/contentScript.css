@@ -6,7 +6,7 @@
   height: 147px;
   z-index: 201;
   cursor: pointer;
-  animation: fade-in 1s ease-in-out forwards;
+  animation: trasp-fade-in 1s ease-in-out forwards;
 }
 
 .icon1 {
@@ -17,10 +17,19 @@
   width: 181px;
   z-index: 201;
   cursor: pointer;
-  animation: fade-in 1s ease-in-out forwards;
+  animation: trasp-fade-in 1s ease-in-out forwards;
 }
 
 @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes trasp-fade-in {
   from {
     opacity: 0;
   }
@@ -29,50 +38,34 @@
   }
 }
 
-.overlay0 {
-  opacity: 100% !important;
+.overlay {
   position: fixed;
   bottom: 50px;
   right: 0;
-  font-family: 'Barlow', sans-serif;
   border-radius: 50px 0 0 50px;
-  background: #000000;
   padding: 30px;
   width: 500px;
   height: 480px;
   z-index: 200;
-  opacity: 0;
-  animation: fade-in 0.2s ease-in-out forwards;
-}
-
-.overlay1 {
-  opacity: 100% !important;
-  position: fixed;
-  bottom: 50px;
-  right: 0;
+  background-color: #63c4f1;
+  animation: fade-in 1s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   font-family: 'Barlow', sans-serif;
-  border-radius: 50px 0 0 50px;
-  background: #589447;
-  padding: 30px;
-  width: 500px;
-  height: 480px;
-  z-index: 200;
-  opacity: 0;
-  animation: fade-in 0.2s ease-in-out forwards;
 }
 
-.overlay1::before {
-  content: '';
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px 0 0 50px;
-  background-image: url(https://www.the-arcade.ie/wp-content/uploads/2015/09/tumblr_n9n93j55ht1rpu2e9o1_r1_500-500x360.gif);
-  background-size: cover;
-  opacity: 0.2;
   z-index: -1;
+  border-radius: inherit; /* Inherit border-radius from the parent element */
 }
 
 .ov-header {
