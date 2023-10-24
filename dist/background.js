@@ -3,8 +3,11 @@ const cfgLocalUrl = chrome.runtime.getURL('./assets/config/cfg.json');
 fetch(cfgLocalUrl)
   .then((response) => response.json())
   .then((data) => {
-    chrome.storage.local.set({ devmode: data.dev });
-    chrome.storage.local.set({ currentDexGen: data.currentDexGen });
+    chrome.storage.local.set({
+      devmode: data.dev,
+      currentDexGen: data.currentDexGen,
+      natIDMaxSupported: data.natIDMaxSupported,
+    });
   });
 
 chrome.storage.local.get('devmode', function (result) {
@@ -17,5 +20,4 @@ chrome.storage.local.get('devmode', function (result) {
 });
 
 var manifestData = chrome.runtime.getManifest();
-
 console.log(`🟢 Online on the service worker side. (v${manifestData.version})`);

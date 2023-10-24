@@ -22,9 +22,11 @@ saveBtn.addEventListener('click', () => {
     muteSetting: muteCheckbox.checked,
   });
 
-  alert(
+  /*alert(
     `Settings saved: Autoplay - ${autoplayCheckbox.checked}, Mute - ${muteCheckbox.checked}`
-  );
+  );*/
+
+  alert('Settings saved successfully.');
 });
 
 // Fetch settings from chrome.storage.local and update checkboxes

@@ -32,7 +32,10 @@ p {
 label {
   font-size: 16px;
   font-weight: 300;
-  margin: 5px;
+}
+
+input {
+  margin-right: 5px;
 }
 
 .ver {
