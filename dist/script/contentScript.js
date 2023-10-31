@@ -98,7 +98,7 @@ initializePage()
 
         if (npkmn > maxNatID) {
         } else {
-          //clickme();
+          clickme();
         }
       }
     }
@@ -235,6 +235,11 @@ initializePage()
       document.head.appendChild(l1);
       document.head.appendChild(l2);
       document.head.appendChild(l3);
+
+      const element = document.createElement('div');
+      element.className = 'hub';
+
+      document.body.appendChild(element);
     }
 
     function overlay(
