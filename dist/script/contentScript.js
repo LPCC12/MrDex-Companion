@@ -238,7 +238,22 @@ initializePage()
 
       const element = document.createElement('div');
       element.className = 'hub';
+      //Inicio HUB
 
+      // ** ELEMENTO GERAÇÃO **
+      const home_om1 = document.createElement('im');
+
+      // ** CLOSE BTN **
+      const closeButton = document.createElement('button');
+      closeButton.className = 'close_btn';
+      closeButton.innerText = 'X';
+      closeButton.onclick = function () {
+        element.parentNode.removeChild(element);
+        clickme();
+      };
+      element.appendChild(closeButton);
+
+      //Final do HUB
       document.body.appendChild(element);
     }
 
