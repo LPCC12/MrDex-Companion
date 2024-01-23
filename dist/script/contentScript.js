@@ -215,11 +215,6 @@ initializePage()
     }
 
     function hub_overlay() {
-      /* HUB
-    - Serves as search and for handling when only partial data is provided. -
-    - Bulbapedia approaches their pages with multiple generations as such the hub will have the data already fetched and provide the user with the possibility to select intended results. -
-    */
-
       const l1 = document.createElement('link');
       l1.rel = 'preconnect';
       l1.href = 'https://fonts.googleapis.com';
@@ -238,10 +233,53 @@ initializePage()
 
       const element = document.createElement('div');
       element.className = 'hub';
+
       //Inicio HUB
 
-      // ** ELEMENTO GERAÇÃO **
-      const home_om1 = document.createElement('im');
+      // ** ELEMENTO GERAÇÃO ** ESPARGUETTTTTTTTTTE
+      const genDiv = document.createElement('div');
+      genDiv.className = 'genDiv';
+
+      // Generation Icons
+      const generationIcons = [
+        [
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/other.png',
+        ],
+        [
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/g1-a.png',
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/g1-b.png',
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/g1-c.png',
+        ],
+        [
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/g2-a.png',
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/g2-b.png',
+          'https://lpcc12.github.io/luis.ccosta12/MDexDB/home-style-origin/g2-c.png',
+        ],
+      ];
+
+      // Dropdown
+      const dropdown = document.createElement('select');
+      dropdown.className = 'generation-dropdown';
+
+      // Options for the dropdown
+      const generationOptions = [
+        'Select an option',
+        'Generation 1',
+        'Generation 2',
+      ];
+      for (let i = 0; i < generationOptions.length; i++) {
+        const option = document.createElement('option');
+        option.value = i; // Set the value to the index for simplicity
+        option.text = generationOptions[i];
+        dropdown.appendChild(option);
+      }
+
+      dropdown.addEventListener('change', function () {
+        handleGenerationSelection(generationIcons[parseInt(this.value)]);
+      });
+
+      genDiv.appendChild(dropdown);
+      element.appendChild(genDiv);
 
       // ** CLOSE BTN **
       const closeButton = document.createElement('button');
@@ -255,6 +293,22 @@ initializePage()
 
       //Final do HUB
       document.body.appendChild(element);
+    }
+
+    function handleGenerationSelection(images) {
+      // Implement the logic to handle the selected generation
+      const genDiv = document.querySelector('.genDiv');
+      genDiv.innerHTML = ''; // Clear existing content
+
+      for (let i = 0; i < images.length; i++) {
+        const icon = document.createElement('img');
+        icon.className = 'home-om';
+        icon.src = images[i];
+        icon.addEventListener('click', function () {
+          // Handle click event for each image if needed
+        });
+        genDiv.appendChild(icon);
+      }
     }
 
     function overlay(
