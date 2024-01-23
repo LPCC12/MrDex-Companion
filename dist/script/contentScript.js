@@ -167,7 +167,7 @@ initializePage()
         }
 
         try {
-          fetch('https://luisccosta12.social/MDexDB/g1/main.json')
+          fetch('https://lpcc12.github.io/luis.ccosta12/MDexDB/g1/main.json')
             .then((response) => response.json())
             .then((data) => {
               if (!data[npkmn - 1].link) {
@@ -216,7 +216,7 @@ initializePage()
 
     function hub_overlay() {
       /* HUB
-    - Servers as search and for handling when only partial data is provided. -
+    - Serves as search and for handling when only partial data is provided. -
     - Bulbapedia approaches their pages with multiple generations as such the hub will have the data already fetched and provide the user with the possibility to select intended results. -
     */
 
@@ -403,7 +403,7 @@ initializePage()
         image.src = `https://img.icons8.com/sf-regular-filled/48/FFFFFF/no-camera.png`;
       else {
         if (gen == 1) {
-          image.src = `https://luisccosta12.social/MDexDB/g1/img/${ov_PKIMG}.png`;
+          image.src = `https://lpcc12.github.io/luis.ccosta12/MDexDB/g1/img/${ov_PKIMG}.png`;
         }
       }
       PKInfoElement.appendChild(image);
@@ -425,7 +425,7 @@ initializePage()
 
           const pkREDImage = document.createElement('img');
           pkREDImage.src =
-            'https://luisccosta12.social/MDexDB/origin-mark/GB-R.png';
+            'https://lpcc12.github.io/luis.ccosta12/MDexDB/origin-mark/GB-R.png';
           pkREDImage.className = 'gb-om';
           gbWrapper.title = '🟢 Available in Red Version.';
 
@@ -450,7 +450,7 @@ initializePage()
 
           const pkBlueImage = document.createElement('img');
           pkBlueImage.src =
-            'https://luisccosta12.social/MDexDB/origin-mark/GB-B.png';
+            'https://lpcc12.github.io/luis.ccosta12/MDexDB/origin-mark/GB-B.png';
           pkBlueImage.className = 'gb-om';
           gbWrapper.title = '🟢 Available in Blue Version.';
 
@@ -475,7 +475,7 @@ initializePage()
 
           const pkYellowImage = document.createElement('img');
           pkYellowImage.src =
-            'https://luisccosta12.social/MDexDB/origin-mark/GB-Y.png';
+            'https://lpcc12.github.io/luis.ccosta12/MDexDB/origin-mark/GB-Y.png';
           pkYellowImage.className = 'gb-om';
           gbWrapper.title = '🟢 Available in Yellow Version.';
 
@@ -536,7 +536,7 @@ initializePage()
       if (ov_PKAppendix != null) {
         let valid = '🛑';
 
-        fetch('https://luisccosta12.social/MDexDB/g1/appendix.json')
+        fetch('https://lpcc12.github.io/luis.ccosta12/MDexDB/g1/appendix.json')
           .then((response) => response.json())
           .then((data) => {
             let foundItems = data.filter((item) =>
@@ -552,9 +552,9 @@ initializePage()
                 // Appendix Icon
                 const apxIcon = document.createElement('img');
                 if (!icon)
-                  apxIcon.src = `https://luisccosta12.social/MDexDB/icons/null.png`;
+                  apxIcon.src = `https://lpcc12.github.io/luis.ccosta12/MDexDB/icons/null.png`;
                 else
-                  apxIcon.src = `https://luisccosta12.social/MDexDB/icons/${icon}.png`;
+                  apxIcon.src = `https://lpcc12.github.io/luis.ccosta12/MDexDB/icons/${icon}.png`;
                 appendixG.appendChild(apxIcon);
 
                 // Appendix Description
